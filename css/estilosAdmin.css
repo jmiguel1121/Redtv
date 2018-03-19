@@ -1,6 +1,6 @@
    body,
    html {
-   	background: linear-gradient(45deg, rgba(255, 255, 255, 1) 0%, rgba(178, 174, 177, 1) 28%, rgba(210, 207, 209, 1) 39%, rgba(250, 250, 250, 1) 53%, rgba(219, 219, 219, 1) 71%, rgba(255, 255, 255, 1) 85%, rgba(255, 255, 255, 1) 100%);
+   	background: linear-gradient(45deg, rgba(255, 255, 255, 1) 0%, rgba(178, 174, 177, 1) 28%, rgba(210, 207, 209, 1) 39%, rgba(250, 250, 250, 1) 53%, rgba(219, 219, 219, 1) 71%, rgba(255, 255, 255, 1) 85%, rgba(255, 255, 255, 1) 100%) center fixed no-repeat;
    	background-size: 100% 100%;
    	font-family: Impact, fantasy;
    }
@@ -125,17 +125,10 @@
    	nav.sidebar:hover {
    		margin-left: 0px;
    	}
-   	/*for hiden things when navbar hidden*/
-   	.forAnimate {
-   		opacity: 0;
-   	}
 
-   
    }
 
-   .navbar {
-   	margin-bottom: 0px;
-   }
+   /*fin @media (min-width: 768px)*/
 
    @media (max-width: 758px) {
    	.navbar-header img {
@@ -146,7 +139,9 @@
 
    }
 
-   @media (max-width: 767px) {
+   /* fin  @media (max-width: 758px)*/
+
+   @media (max-width: 120px) {
    	.navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
    		color: white;
    	}
@@ -173,6 +168,11 @@
    	nav.sidebar .forAnimate {
    		opacity: 1;
    	}
+
+   }
+
+   .navbar {
+   	margin-bottom: 0px;
    }
 
    nav.sidebar .navbar-nav .open .dropdown-menu > li > a:hover,
@@ -185,8 +185,10 @@
 
 
    .navbar-inverse {
-   	background: linear-gradient(45deg, rgba(236, 255, 130, 1) 0%, rgba(245, 147, 0, 1) 28%, rgba(247, 166, 18, 1) 39%, rgba(250, 191, 40, 1) 53%, rgba(240, 136, 9, 1) 71%, rgba(240, 195, 118, 1) 85%, rgba(255, 255, 255, 1) 100%);
-   	border-color: #080808;
+   	background: linear-gradient(45deg, rgba(245, 121, 54, 1) 0%, rgba(255, 179, 28, 1) 22%, rgba(245, 105, 12, 1) 46%, rgba(250, 168, 3, 1) 62%, rgba(240, 110, 24, 1) 71%, rgba(235, 164, 77, 1) 100%);
+		border: none;
+		height: auto;
+		
    }
 
    .navbar-header img {
@@ -197,12 +199,12 @@
 
    .navbar-inverse .navbar-nav > li > a {
    	color: #fff;
-   	font-size: 18px;
+   	font-size: 12px;
    }
 
    .navbar-inverse .navbar-nav > li > a:hover {
    	color: #fff;
-   	font-size: 18px;
+   	font-size: 12px;
    	background-color: rgba(215, 102, 0, 0.9);
    	background: rgba(215, 102, 0, 0.9);
    }
@@ -214,33 +216,58 @@
    	background-color: rgba(215, 102, 0, 0.9);
    	background: rgba(215, 102, 0, 0.9);
    }
+.navbar-header {
+	background: white;
+}
 
    /* fin estilos menu ================================================================================= */
 
-   #accionUsuario img {
-   	max-width: 30px;
-   	border-radius: 50px;
-   }
-
    /* estilos header ================================================================================= */
+#opcion-susario li a{
+	padding: 0px;
+	color: white;
+	margin: 10px;
+	width: 100px;	
+  	border-radius: 50px;
+}
+#opcion-susario > li > a:hover, .nav > li > a:focus {
+background: white ; 
+    color: black;
+}
+#opcion-susario .dropdown-menu li a{
+	color: black;
+	width: 90%;
+	margin: 3px;
 
+}
+#opcion-susario .dropdown-menu li a:hover{
+	color: white;
+	background: black;
+	width: 90%;
+	border-radius: 0px;
+	
+}
    #cabecera img {
    	/* logo*/
    	width: 50px;
+max-width: 30px;
+		  	border-radius: 50px;
 
    }
 
    #cabecera {
-   	background: white;
+   	background: black;
    	border-bottom: solid 5px black;
    	height: 60px;
    	padding: 2px;
+   	color: white;
    }
 
-   #cabecera h3 {
+   #cabecera p {
    	margin: 0px;
    	margin-left: 9px;
    	display: inline-block;
+		font-size: 16px;
    }
 
    @media (min-width: 768px) {}

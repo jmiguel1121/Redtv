@@ -6,10 +6,10 @@
 	<meta charset="utf-8">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" href="img/logo.png">
-	<link href="css/bootstrap.css" rel="stylesheet">
+	<link rel="shortcut icon" href="../img/logo.png">
+	<link href="../css/bootstrap.css" rel="stylesheet">
 	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-	<link href="css/estilosAdmin.css" rel="stylesheet">
+	<link href="../css/estilosAdmin.css" rel="stylesheet">
 
 </head>
 
@@ -25,7 +25,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-				<img src="img/logo.png" alt="">
+				<img src="../img/logo.png" alt="">
 				<h3>ServiRTv</h3>
 
 			</div>
@@ -33,22 +33,47 @@
 			<div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
 				<ul class="nav navbar-nav">
 					<li><a href="#">Home<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
+					<!-- facturacion -->
+					<li><a href="#">Consultar Factura<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
+					<li><a href="#">Generar Pago<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
+
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Cartera <span class="caret"></span><span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-cog"></span></a>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Generar Reporte <span class="caret"></span><span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-cog"></span></a>
 						<ul class="dropdown-menu forAnimate" role="menu">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
+							<li><a href="#">Consultar Factura</a></li>
+							<li><a href="#">Consultar Pago</a></li>
+							<li><a href="#">Consultar Clientes</a></li>
 						</ul>
 					</li>
+					<li><a href="#">Consultar Clientes en Mora<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
+					<li><a href="#">Generar factura Mensual<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
+
+					<!-- control de servicios -->
+					<li><a href="#">Generar Suscripcion<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
+
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Servicios <span class="caret"></span><span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-cog"></span></a>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Generar Servicios <span class="caret"></span><span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-cog"></span></a>
 						<ul class="dropdown-menu forAnimate" role="menu">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
+							<li><a href="#">Registrar Paquete Extra</a></li>
+							<li><a href="#">Agendar Servicios</a></li>
+							<li><a href="#">Consultar servicios Solicitados</a></li>
 						</ul>
 					</li>
+					<li><a href="#">Generar Programacion Diaria<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
+					<li><a href="#">Aprobar Serivico<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
+					<!-- control de agendamiento -->
+					<li><a href="#">Servicios Agendados<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
+					<li><a href="#">historial de Agendamientos<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
+					<li><a href="#">Registrar Material<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
+
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Registrar Material <span class="caret"></span><span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-cog"></span></a>
+						<ul class="dropdown-menu forAnimate" role="menu">
+							<li><a href="#">Asignar Material</a></li>
+							<li><a href="#">REgistrar Material Instalado</a></li>
+						</ul>
+					</li>
+						<!--  -->
 				</ul>
 			</div>
 		</div>
@@ -56,8 +81,10 @@
 
 	<!-- fin amenu ====================================================================================== -->
 	<div id="cabecera">
-		<ul class="nav navbar-right">
-			<li id="accionUsuario" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="img/user_admin.png" alt=""> usuario  <b class="caret"></b></a>
+	<p>Redtv</p>
+	
+		<ul id="opcion-susario" class="nav navbar-right">
+			<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="../img/user_admin.png" alt=""> usuario<b class="caret"></b></a>
 				<ul class="dropdown-menu">
 					<li><a href="#"><span class="glyphicon glyphicon-cog"></span>Cambiar Cotraseña</a></li>
 					<li><a href="#"><span class="glyphicon glyphicon-cog"></span>Admin</a></li>
@@ -67,14 +94,14 @@
 		</ul>
 	</div>
 	<div class="contenido">
-	
+
 	</div>
 
 
 	<!-- scripts -->
-	<script src="js/jquery-3.2.1.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/admin.js"></script>
+	<script src="../js/jquery-3.2.1.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/admin.js"></script>
 
 </body>
 

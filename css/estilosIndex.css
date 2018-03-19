@@ -1,0 +1,407 @@
+body {
+	background: white;
+	background-size: 100% 100%;
+	font-family: Impact, fantasy;
+	margin: 0px;
+}
+
+/* estilos menu ======================================================================*/
+
+.bg-inverse {
+	background: red;
+	transition: all 1s ease;
+}
+
+.logo {
+	width: 110px;
+	margin: 0px;
+}
+
+.menu {
+	height: 60px;
+	background-color: rgba(50, 44, 44, 0.5);
+	background: rgba(50, 44, 44, 0.5);
+	color: rgba(50, 44, 44, 0.5);
+	border-bottom: solid 1px white;
+	margin-bottom: 0px;
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+
+}
+
+.navbar-inverse .navbar-nav li a {
+
+	color: white;
+	font-family: Impact, fantasy;
+	margin-right: 1px;
+	font-size: 12px;
+
+}
+
+/* estilos css scroll menu -----------------*/
+
+.navInverse {
+	background: white;
+	border-bottom: solid 2px orange;
+}
+
+.navInverse .navbar-nav li a {
+	color: currentColor;
+}
+
+/*- fin estilos css scroll menu ------------*/
+
+.navbar-inverse .navbar-nav li a:hover {
+
+	color: rgba(255, 93, 0, 0.8);
+	font-size: 13px;
+
+}
+
+/* stilos menu responsive ----------------- */
+
+@media(max-width:771px) {
+	.navbar-inverse .navbar-nav > li a {
+		color: white;
+		margin-right: 15px;
+		font-family: Impact, fantasy;
+		font-size: 12px;
+		margin-right: 15px;
+
+	}
+	.descripcion {
+		margin-top: 20px;
+
+	}
+	.navbar-inverse .navbar-nav li a {
+		height: 60px;
+		background-color: rgba(50, 44, 44, 0.5);
+		background: rgba(50, 44, 44, 0.5);
+		color: rgba(50, 44, 44, 0.5);
+		color: white;
+	}
+}
+
+/* fin stilos menu responsive ----------------- */
+
+.descripcion {
+	border-left: solid 3px white;
+	height: 300px;
+	
+
+}
+
+/* fin estilos menu =================================================================*/
+
+.contenido {
+	background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(237, 234, 237, 1) 12%, rgba(245, 242, 245, 1) 90%, rgba(255, 255, 255, 1) 100%);
+
+	z-index: -3;
+	position: relative;
+}
+
+/*-----------------------------------------*/
+
+.container h3 {
+	padding: 2px;
+	border-bottom: solid 2px orange;
+
+}
+
+/* eslogan ----------------------------------*/
+
+.titulo {
+	font-family: fantasy;
+	margin-top: 10px;
+	color: darkred;
+	margin-left: 30px;
+}
+
+
+/* imagen de presentacion -------------------*/
+
+#presentacion {
+	padding-top: 69px;
+	height: 600px;
+	background: url('../img/antena.jpg') fixed center no-repeat;
+	background-size: 100% 700px;
+	margin-bottom: 0px;
+
+}
+
+#presentacion h1 {
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+	color: white;
+	font: oblique bold 320% cursive;
+
+}
+
+@media (max-width:800px) {
+	#presentacion h1 {
+		text-align: center;
+		padding: 0px;
+		margin: 0px;
+		color: white;
+		font: oblique bold 220% cursive;
+	}
+}
+
+/* footer ===============================================================-*/
+
+footer {
+
+	background-color: black;
+	color: aliceblue;
+}
+
+/* estilos modal =========================================================*/
+
+.modal-content {
+	-webkit-box-shadow: -1px 0px 67px -15px rgba(0, 0, 0, 0.56);
+	-moz-box-shadow: -1px 0px 67px -15px rgba(0, 0, 0, 0.56);
+	box-shadow: -1px 0px 67px -15px rgba(0, 0, 0, 0.56);
+
+	border: solid 1px white;
+}
+
+.logoLogin {
+	margin-left: 30%;
+	margin-right: 30%;
+	width: 40%;
+	height: 50px;
+	margin-bottom: 10px;
+}
+@media (max-width:751px){
+	.logoLogin {
+	margin-left: 40%;
+	margin-right: 40%;
+	width: 20%;
+	height: 50px;
+	margin-bottom: 10px;
+}
+}
+
+
+#form_login input:focus {
+	border: solid 1px red;
+}
+#form_login input {
+	height: 40px;
+	font-size: 16px;
+}
+
+.brnIngresar {
+	background: #39b89f;
+	color: white;
+	width: 100%;
+	height: 40px;
+	padding: 3px;
+}
+.brnIngresar:hover {
+	background: #3c9e86;
+	padding: 2px;
+	color: aliceblue;
+}
+
+#datosLogin {
+	color: black;
+	text-align: center;
+}
+#form-recuperacion p{
+	width: 100%;
+}
+#form-recuperacion input{
+}
+#contenido-registro{
+	display: none;
+}
+#contenido-recuperacion{
+	display: none;
+}
+
+/* estilos informacion ======================================== */
+
+.linea {
+	border: solid 4px white;
+}
+
+.informacion {
+	height: 0px;
+
+}
+
+.informacion img {
+	height: 70px;
+	width: 70px;
+}
+
+.informacionTexto {
+	padding: 7px;
+	z-index: 1;
+	
+}
+
+.informacionTexto p {
+	padding: 12px;
+	font-size: 19;
+	width: auto;
+	text-align: justify;
+}
+
+.informacionTexto h2 {
+	margin-left: 30%;
+	border-bottom: solid 2px red;
+	padding: 1px;
+
+}
+
+/* fin estilos informacion ===================================== */
+
+/* estilos planes y costos  *===================================*/
+
+.indicador {
+
+	width: 9px;
+	height: auto;
+	border-radius: 50px;
+}
+
+.planes {
+	width: 100%;
+	margin-top: 20px;
+	border-bottom: solid 4px white;
+	height: auto;
+}
+
+.planes img {
+	width: 70px;
+
+}
+
+.costos {
+	width: 90%;
+	height: auto;
+	float: right;
+	border-radius: 8px;
+	padding: 20px;
+	z-index: -1;
+}
+
+/* responsive costos -------*/
+
+@media (max-width:800px) {
+	.planes img {
+		width: 40px;
+	}
+}
+
+/* fin responsive costos -------*/
+
+/* fin  estilos planes y costos  *****************************************************************/
+
+/*estilos contacto *****************************************************************************+*/
+
+#contacto {
+	width: 100%;
+	background: url('../img/ubicacion.jpg') center;
+	background-size: 50% 100%;
+	opacity: 0.9;
+	padding: 20px;
+	margin-top: 30px;
+	height: auto;
+
+}
+
+#contacto h1 {
+	text-align: center;
+	font-size: 40px;
+	color: white;
+}
+
+.map{
+	border-bottom: solid 4px orange;
+	border-top: solid 4px orange;
+	background-color: rgba(0, 0, 11, 0.6);
+	background: rgba(0, 0, 11, 0.6);
+	padding: 40px;
+	padding-top: 0px;
+}
+
+.map iframe {
+	border: solid 2px black;
+}
+
+.titulo-contacto {
+	margin-top: 50px;
+	background: linear-gradient(135deg, rgba(255, 175, 75, 1) 0%, rgba(255, 146, 10, 1) 100%);
+}
+
+#form_contacto input {
+	padding: 10px;
+	width: 100%;
+	margin: 10px;
+	height: 40px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: none;
+	border-bottom: solid 3px orange;
+	color: midnightblue;
+	
+
+	
+}
+
+#form_contacto textarea {
+	padding: 10px;
+	width: 100%;
+	margin: 10px;
+	font-size: 16px;
+		border-radius: 5px;
+	border: none;
+	border-bottom: solid 3px orange;
+	color: white;
+	font: monospace 150%;
+}
+
+#form_contacto buttom {
+	width: 100%;
+	color: white;
+	background: #149400;
+	font-size: 18px;
+		margin: 10px;
+
+		
+}
+#form_contacto buttom:hover {
+	background: #047522;
+}
+
+#form_contacto ::placeholder {
+	color: #a09ea1;
+}
+
+:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+		color: #a09ea1;
+
+}
+
+::-ms-input-placeholder {
+	/* Microsoft Edge */
+	color: #a09ea1;
+
+}
+@media (max-width:800px) {
+	#contacto {
+	background-size: 100% 100%;
+	}
+}
+
+
+/* estilos contacto =========================================================================*/
+header img{
+	width: 50px;
+}

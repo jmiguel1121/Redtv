@@ -1,0 +1,254 @@
+   body,
+   html {
+   	background: linear-gradient(45deg, rgba(255, 255, 255, 1) 0%, rgba(178, 174, 177, 1) 28%, rgba(210, 207, 209, 1) 39%, rgba(250, 250, 250, 1) 53%, rgba(219, 219, 219, 1) 71%, rgba(255, 255, 255, 1) 85%, rgba(255, 255, 255, 1) 100%);
+   	background-size: 100% 100%;
+   	font-family: Impact, fantasy;
+   }
+
+   /* estilos menu ===============================================================================================================*/
+
+   /* remove outer padding */
+
+   .main .row {
+   	padding: 0px;
+   	margin: 0px;
+   }
+
+   /*Remove rounded coners*/
+
+   nav.sidebar.navbar {
+   	border-radius: 0px;
+   }
+
+   nav.sidebar,
+   .main {
+   	-webkit-transition: margin 200ms ease-out;
+   	-moz-transition: margin 200ms ease-out;
+   	-o-transition: margin 200ms ease-out;
+   	transition: margin 200ms ease-out;
+   }
+
+   /* Add gap to nav and right windows.*/
+
+   .main {
+   	padding: 10px 10px 0 10px;
+   }
+
+   /* .....NavBar: Icon only with coloring/layout.....*/
+
+   /*small/medium side display*/
+
+   @media (min-width: 768px) {
+
+   	/*Allow main to be next to Nav*/
+   	.main {
+   		position: absolute;
+   		width: calc(100% - 40px);
+   		/*keeps 100% minus nav size*/
+   		margin-left: 40px;
+   		float: right;
+   	}
+
+
+   	/*lets nav bar to be showed on mouseover*/
+   	nav.sidebar:hover + .main {
+   		margin-left: 200px;
+   	}
+
+   	/*Center Brand*/
+   	nav.sidebar.navbar.sidebar > .container .navbar-brand,
+   	.navbar > .container-fluid .navbar-brand {
+   		margin-left: 0px;
+   	}
+   	/*Center Brand*/
+   	nav.sidebar .navbar-brand,
+   	nav.sidebar .navbar-header {
+   		text-align: center;
+   		width: 100%;
+   		margin-left: 0px;
+   	}
+
+   	/*Center Icons*/
+   	nav.sidebar a {
+   		padding-right: 13px;
+   	}
+
+   	/*adds border top to first nav box */
+   	nav.sidebar .navbar-nav > li:first-child {
+   		border-top: 1px #e5e5e5 solid;
+   	}
+
+   	/*adds border to bottom nav boxes*/
+   	nav.sidebar .navbar-nav > li {
+   		border-bottom: 1px #e5e5e5 solid;
+   	}
+
+   	/* Colors/style dropdown box*/
+   	nav.sidebar .navbar-nav .open .dropdown-menu {
+   		position: static;
+   		float: none;
+   		width: auto;
+   		margin-top: 1px;
+   		background-color: transparent;
+   		border: 0;
+   		-webkit-box-shadow: none;
+   		box-shadow: none;
+   	}
+
+   	/*allows nav box to use 100% width*/
+   	nav.sidebar .navbar-collapse,
+   	nav.sidebar .container-fluid {
+   		padding: 0 0px 0 0px;
+   	}
+
+   	/*colors dropdown box text */
+   	.navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+   		color: white;
+   	}
+
+   	/*gives sidebar width/height*/
+   	nav.sidebar {
+   		width: 200px;
+   		height: 100%;
+   		margin-left: -160px;
+   		float: left;
+   		z-index: 8000;
+   		margin-bottom: 0px;
+   	}
+
+   	/*give sidebar 100% width;*/
+   	nav.sidebar li {
+   		width: 100%;
+   	}
+
+   	/* Move nav to full on mouse over*/
+   	nav.sidebar:hover {
+   		margin-left: 0px;
+   	}
+   	/*for hiden things when navbar hidden*/
+   	.forAnimate {
+   		opacity: 0;
+   	}
+
+   
+   }
+
+   .navbar {
+   	margin-bottom: 0px;
+   }
+
+   @media (max-width: 758px) {
+   	.navbar-header img {
+
+   		max-width: 80px;
+
+   	}
+
+   }
+
+   @media (max-width: 767px) {
+   	.navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+   		color: white;
+   	}
+   }
+
+
+   /* .....NavBar: Fully showing nav bar..... */
+
+   @media (min-width: 1330px) {
+
+   	/*Allow main to be next to Nav*/
+   	.main {
+   		width: calc(100% - 200px);
+   		/*keeps 100% minus nav size*/
+   		margin-left: 200px;
+   	}
+
+   	/*Show all nav*/
+   	nav.sidebar {
+   		margin-left: 0px;
+   		float: left;
+   	}
+   	/*Show hidden items on nav*/
+   	nav.sidebar .forAnimate {
+   		opacity: 1;
+   	}
+   }
+
+   nav.sidebar .navbar-nav .open .dropdown-menu > li > a:hover,
+   nav.sidebar .navbar-nav .open .dropdown-menu > li > a:focus {
+   	color: white;
+   	background-color: rgba(215, 102, 0, 0.9);
+   	background: rgba(215, 102, 0, 0.9);
+
+   }
+
+
+   .navbar-inverse {
+   	background: linear-gradient(45deg, rgba(236, 255, 130, 1) 0%, rgba(245, 147, 0, 1) 28%, rgba(247, 166, 18, 1) 39%, rgba(250, 191, 40, 1) 53%, rgba(240, 136, 9, 1) 71%, rgba(240, 195, 118, 1) 85%, rgba(255, 255, 255, 1) 100%);
+   	border-color: #080808;
+   }
+
+   .navbar-header img {
+   	width: 80px;
+   	border-radius: 50px;
+   	margin-top: 9px;
+   }
+
+   .navbar-inverse .navbar-nav > li > a {
+   	color: #fff;
+   	font-size: 18px;
+   }
+
+   .navbar-inverse .navbar-nav > li > a:hover {
+   	color: #fff;
+   	font-size: 18px;
+   	background-color: rgba(215, 102, 0, 0.9);
+   	background: rgba(215, 102, 0, 0.9);
+   }
+
+   .navbar-inverse .navbar-nav > .open > a,
+   .navbar-inverse .navbar-nav > .open > a:hover,
+   .navbar-inverse .navbar-nav > .open > a:focus {
+   	color: #fff;
+   	background-color: rgba(215, 102, 0, 0.9);
+   	background: rgba(215, 102, 0, 0.9);
+   }
+
+   /* fin estilos menu ================================================================================= */
+
+   #accionUsuario img {
+   	max-width: 30px;
+   	border-radius: 50px;
+   }
+
+   /* estilos header ================================================================================= */
+
+   #cabecera img {
+   	/* logo*/
+   	width: 50px;
+
+   }
+
+   #cabecera {
+   	background: white;
+   	border-bottom: solid 5px black;
+   	height: 60px;
+   	padding: 2px;
+   }
+
+   #cabecera h3 {
+   	margin: 0px;
+   	margin-left: 9px;
+   	display: inline-block;
+   }
+
+   @media (min-width: 768px) {}
+
+   /* contenido=============================================================================================*/
+
+   .contenido {
+   	background: white;
+
+
+   }

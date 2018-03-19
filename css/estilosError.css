@@ -1,0 +1,112 @@
+body {
+	background: url('../img/antena.jpg');
+	font-family: cursive;
+	color: white;
+	padding: 80px;
+	padding-bottom: 50px;
+	padding-top: 50px;
+
+
+}
+
+
+.presentacion {
+	width: 80%;
+
+
+	background-color: rgba(91, 91, 93, 0.7);
+	background: rgba(91, 91, 93, 0.7);
+	border-radius: 10px;
+	padding: 50px;
+}
+
+.presentacion img {
+	width: 40%;
+	height: auto;
+}
+
+.mensaje {
+	width: 59%;
+	height: auto;
+	display: inline-block;
+	text-align: center
+}
+
+.error img {
+	width: 30%;
+	float: left;
+}
+
+.error {
+	padding: 30px;
+	width: 100%;
+	margin: 0px;
+	display: inline-block;
+}
+
+.error h2 {
+	font-size: 140px;
+	margin: 0px;
+
+}
+
+.regreso {
+	color: white;
+	background: #ff6512;
+	height: 50px;
+	width: 200px;
+	border: none;
+	border-radius: 10px;
+	font-size: 19px;
+}
+
+@media(max-width:951px) {
+
+	.error h2 {
+		font-size: 80px;
+		margin: 0px;
+
+	}
+	.mensaje {
+		width: 100%;
+	}
+	.error img {
+		width: 20%;
+
+	}
+
+}
+
+@media(max-width:760px) {
+
+	body {
+		padding: 20px;
+	}
+	.error h2 {
+		font-size: 70px;
+		margin: 0px;
+
+	}
+	.error {
+		width: 100%;
+		padding: 10px;
+	}
+	.presentacion img {
+		width: 100%;
+		height: auto;
+	}
+	.presentacion {
+		padding: 15px;
+	}
+	.error img {
+		width: 20%;
+
+	}
+	.mensaje {
+		width: 100%;
+	}
+	.regreso {
+		font-size: 10px;
+		width: 100%;
+	}
+}

@@ -7,15 +7,6 @@
 
    /* estilos menu ===============================================================================================================*/
 
-   /* remove outer padding */
-
-   .main .row {
-   	padding: 0px;
-   	margin: 0px;
-   }
-
-   /*Remove rounded coners*/
-
    nav.sidebar.navbar {
    	border-radius: 0px;
    }
@@ -34,16 +25,287 @@
    	padding: 10px 10px 0 10px;
    }
 
-   /* .....NavBar: Icon only with coloring/layout.....*/
+   .navbar {
+   	margin-bottom: 0px;
+   }
 
-   /*small/medium side display*/
+   nav.sidebar .navbar-nav .open .dropdown-menu > li > a:hover,
+   nav.sidebar .navbar-nav .open .dropdown-menu > li > a:focus {
+   	color: white;
+   	background-color: rgba(215, 102, 0, 0.9);
+   	background: rgba(215, 102, 0, 0.9);
+
+   }
+
+   /*estilos baara de menu lateral*/
+
+   .navbar-inverse {
+   	background: linear-gradient(45deg, rgba(245, 121, 54, 1) 0%, rgba(255, 179, 28, 1) 22%, rgba(245, 105, 12, 1) 46%, rgba(250, 168, 3, 1) 62%, rgba(240, 110, 24, 1) 71%, rgba(235, 164, 77, 1) 100%);
+   	border: none;
+   	height: auto;
+
+   }
+
+   .navbar-header img {
+   	width: 80px;
+   	border-radius: 50px;
+   	margin-top: 9px;
+   }
+
+   .navbar-inverse .navbar-nav > li > a {
+   	color: #fff;
+   	font-size: 12px;
+   }
+
+   .navbar-inverse .navbar-nav > li > a:hover {
+   	color: #fff;
+   	font-size: 12px;
+   	background-color: rgba(215, 102, 0, 0.9);
+   	background: rgba(215, 102, 0, 0.9);
+   }
+
+   .navbar-inverse .navbar-nav > .open > a,
+   .navbar-inverse .navbar-nav > .open > a:hover,
+   .navbar-inverse .navbar-nav > .open > a:focus {
+   	color: #fff;
+   	background-color: rgba(215, 102, 0, 0.9);
+   	background: rgba(215, 102, 0, 0.9);
+   }
+
+   .navbar-header {
+   	background: white;
+   }
+
+   /* fin estilos menu ================================================================================= */
+
+   /* estilos header ================================================================================= */
+
+   #opcion-susario li a {
+   	padding: 0px;
+   	color: white;
+   	margin: 10px;
+   	width: 100px;
+   	border-radius: 50px;
+   }
+
+   #opcion-susario > li > a:hover,
+   .nav > li > a:focus {
+   	background: white;
+   	color: black;
+   }
+
+   #opcion-susario .dropdown-menu li a {
+   	color: black;
+   	width: 90%;
+   	margin: 3px;
+
+   }
+
+   #opcion-susario .dropdown-menu li a:hover {
+   	color: white;
+   	background: black;
+   	width: 90%;
+   	border-radius: 0px;
+
+   }
+
+   #cabecera img {
+   	/* logo*/
+   	width: 50px;
+   	max-width: 30px;
+   	border-radius: 50px;
+
+   }
+
+   #cabecera {
+   	background: black;
+   	border-bottom: solid 5px black;
+   	height: 60px;
+   	padding: 2px;
+   	color: white;
+   	display: block;
+   }
+
+   #cabecera p {
+   	margin: 0px;
+   	margin-left: 9px;
+   	display: inline-block;
+   	font-size: 16px;
+   }
+
+   @media (min-width: 768px) {}
+
+   /* contenido=============================================================================================*/
+
+   .informaion-modulo h1 {
+   	font-size: 25px;
+   	color: white;
+   	padding-top: 10px;
+   	margin-right: 50px;
+   	float: right;
+   	display: inline-block;
+   }
+
+   .informaion-modulo p {
+   	color: white;
+   	padding: 10px;
+   	margin-left: 30px;
+   	font: message-box;
+
+   }
+
+   #contenido-modulo {}
+
+   .informaion-modulo {
+   	height: 80px;
+   	background: url('../img/servidores.jpg') center;
+   	background-size: 100% 100%;
+   	width: 100%;
+
+   }
+
+   .datos {
+   	width: 100%;
+   	padding: 20px;
+   	padding: 30px;
+		display: block;
+   }
+
+   #menu {
+   	display: block;
+   }
+
+   #formularios {
+   	width: 60%;
+   	background: white;
+   	padding: 20px;
+   	font-size: 12px;
+   	font: message-box;
+   	display: inline-block;
+   	margin: 5px;
+		float: left;
+   }
+   #tablas {
+   	width: 90%;
+   	background: white;
+   	padding: 20px;
+   	font-size: 12px;
+   	font: message-box;
+   	display: inline-block;
+   	margin: 5px;
+		float: left;
+				margin-bottom: 50px;
+
+   }
+
+
+   .form-group {
+   	margin-top: 20px;
+   }
+
+
+   #formularios legend {
+   	background: red;
+   	height: 40px;
+   	background: linear-gradient(135deg, rgba(9, 127, 148, 1) 0%, rgba(58, 201, 191, 1) 40%, rgba(37, 133, 114, 1) 68%, rgba(162, 235, 211, 1) 100%);
+   	padding: 10px;
+   	color: white;
+   }
+
+   .otros-datos {
+   	width: 35%;
+   	background: white;
+   	padding: 20px;
+   	font-size: 12px;
+   	font: message-box;
+   	display: inline-table;
+   	margin: 5px;
+		float: left;
+
+
+   }
+
+   .otros-datos legend {
+
+   	height: 40px;
+   	background: linear-gradient(135deg, rgba(9, 127, 148, 1) 0%, rgba(58, 201, 191, 1) 40%, rgba(37, 133, 114, 1) 68%, rgba(162, 235, 211, 1) 100%);
+   	padding: 10px;
+   	color: white;
+   }
+
+   .form-control {
+   	border: 2px solid #168072;
+   }
+
+   /* check box  _________________________________*/
+
+   .funkyradio div {
+   	clear: both;
+   	overflow: hidden;
+   }
+
+   .funkyradio label {
+   	width: 100%;
+   	border-radius: 3px;
+   	border: 2px solid #168072;
+   	font: message-box;
+
+   }
+
+   .funkyradio input[type="checkbox"]:empty {
+   	display: none;
+   }
+
+   .funkyradio input[type="checkbox"]:empty ~ label {
+   	position: relative;
+   	line-height: 2em;
+   	text-indent: 3.25em;
+   	margin-top: 0em;
+   	cursor: pointer;
+   	-webkit-user-select: none;
+   	-moz-user-select: none;
+   	-ms-user-select: none;
+   	user-select: none;
+   }
+
+
+   .funkyradio input[type="checkbox"]:empty ~ label:before {
+   	position: absolute;
+   	display: block;
+   	top: 0;
+   	bottom: 0;
+   	left: 0;
+   	content: '';
+   	width: 2.5em;
+   	background: silver;
+   	border-radius: 3px 0 0 3px;
+   }
+
+
+
+   .funkyradio input[type="checkbox"]:checked ~ label:before {
+   	content: '\2714';
+   	text-indent: .9em;
+   	color: black;
+   	background-color: whitesmoke;
+   }
+
+
+   .funkyradio-success input[type="checkbox"]:checked ~ label:before {
+   	color: #fff;
+   	background-color: green;
+
+   }
+
+
+   /*responsive===========================================*/
 
    @media (min-width: 768px) {
 
    	/*Allow main to be next to Nav*/
    	.main {
    		position: absolute;
-   		width: calc(100% - 40px);
+   		width: calc(100% - 30px);
    		/*keeps 100% minus nav size*/
    		margin-left: 40px;
    		float: right;
@@ -128,7 +390,31 @@
 
    }
 
-   /*fin @media (min-width: 768px)*/
+   /* responvie 1330 px   _______________________*/
+
+   @media (min-width: 1330px) {
+
+      	/*Show all nav*/
+   	nav.sidebar {
+   		margin-left: 0px;
+   		float: left;
+   	}
+   	/*Show hidden items on nav*/
+   	nav.sidebar .forAnimate {
+   		opacity: 1;
+   	}
+   	#contenido-modulo {
+   		margin-left: 200px;
+   		height: 100%;
+   	}
+   	.navbar-inverse {
+   		position: fixed;
+   	}
+
+
+   }
+
+   /* responvie 758 px*/
 
    @media (max-width: 758px) {
    	.navbar-header img {
@@ -138,144 +424,14 @@
    	}
 
    }
+/* footer ===============================================================-*/
 
-   /* fin  @media (max-width: 758px)*/
-
-   @media (max-width: 120px) {
-   	.navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
-   		color: white;
-   	}
-   }
-
-
-   /* .....NavBar: Fully showing nav bar..... */
-
-   @media (min-width: 1330px) {
-
-   	/*Allow main to be next to Nav*/
-   	.main {
-   		width: calc(100% - 200px);
-   		/*keeps 100% minus nav size*/
-   		margin-left: 200px;
-   	}
-
-   	/*Show all nav*/
-   	nav.sidebar {
-   		margin-left: 0px;
-   		float: left;
-   	}
-   	/*Show hidden items on nav*/
-   	nav.sidebar .forAnimate {
-   		opacity: 1;
-   	}
-
-   }
-
-   .navbar {
-   	margin-bottom: 0px;
-   }
-
-   nav.sidebar .navbar-nav .open .dropdown-menu > li > a:hover,
-   nav.sidebar .navbar-nav .open .dropdown-menu > li > a:focus {
-   	color: white;
-   	background-color: rgba(215, 102, 0, 0.9);
-   	background: rgba(215, 102, 0, 0.9);
-
-   }
-
-
-   .navbar-inverse {
-   	background: linear-gradient(45deg, rgba(245, 121, 54, 1) 0%, rgba(255, 179, 28, 1) 22%, rgba(245, 105, 12, 1) 46%, rgba(250, 168, 3, 1) 62%, rgba(240, 110, 24, 1) 71%, rgba(235, 164, 77, 1) 100%);
-		border: none;
-		height: auto;
-		
-   }
-
-   .navbar-header img {
-   	width: 80px;
-   	border-radius: 50px;
-   	margin-top: 9px;
-   }
-
-   .navbar-inverse .navbar-nav > li > a {
-   	color: #fff;
-   	font-size: 12px;
-   }
-
-   .navbar-inverse .navbar-nav > li > a:hover {
-   	color: #fff;
-   	font-size: 12px;
-   	background-color: rgba(215, 102, 0, 0.9);
-   	background: rgba(215, 102, 0, 0.9);
-   }
-
-   .navbar-inverse .navbar-nav > .open > a,
-   .navbar-inverse .navbar-nav > .open > a:hover,
-   .navbar-inverse .navbar-nav > .open > a:focus {
-   	color: #fff;
-   	background-color: rgba(215, 102, 0, 0.9);
-   	background: rgba(215, 102, 0, 0.9);
-   }
-.navbar-header {
-	background: white;
+footer {
+  background-color: black;
+	clear: both; 
+/*	display: fixed ;*/
+  top: 0;
+  width: 100%;
+  height: 40px;
+  color: white;
 }
-
-   /* fin estilos menu ================================================================================= */
-
-   /* estilos header ================================================================================= */
-#opcion-susario li a{
-	padding: 0px;
-	color: white;
-	margin: 10px;
-	width: 100px;	
-  	border-radius: 50px;
-}
-#opcion-susario > li > a:hover, .nav > li > a:focus {
-background: white ; 
-    color: black;
-}
-#opcion-susario .dropdown-menu li a{
-	color: black;
-	width: 90%;
-	margin: 3px;
-
-}
-#opcion-susario .dropdown-menu li a:hover{
-	color: white;
-	background: black;
-	width: 90%;
-	border-radius: 0px;
-	
-}
-   #cabecera img {
-   	/* logo*/
-   	width: 50px;
-max-width: 30px;
-		  	border-radius: 50px;
-
-   }
-
-   #cabecera {
-   	background: black;
-   	border-bottom: solid 5px black;
-   	height: 60px;
-   	padding: 2px;
-   	color: white;
-   }
-
-   #cabecera p {
-   	margin: 0px;
-   	margin-left: 9px;
-   	display: inline-block;
-		font-size: 16px;
-   }
-
-   @media (min-width: 768px) {}
-
-   /* contenido=============================================================================================*/
-
-   .contenido {
-   	background: white;
-
-
-   }

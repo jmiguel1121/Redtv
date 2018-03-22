@@ -5,15 +5,9 @@ body {
 	padding: 80px;
 	padding-bottom: 50px;
 	padding-top: 50px;
-
-
 }
-
-
 .presentacion {
-	width: 80%;
-
-
+	width: 90%;
 	background-color: rgba(91, 91, 93, 0.7);
 	background: rgba(91, 91, 93, 0.7);
 	border-radius: 10px;
@@ -23,15 +17,20 @@ body {
 .presentacion img {
 	width: 40%;
 	height: auto;
+	display: inline-block;
 }
 
 .mensaje {
-	width: 59%;
+	width: 50%;
 	height: auto;
 	display: inline-block;
-	text-align: center
+	text-align: center;
+	padding: 50px;
 }
-
+.mensaje h3{
+	display: block;
+	
+}
 .error img {
 	width: 30%;
 	float: left;
@@ -45,7 +44,7 @@ body {
 }
 
 .error h2 {
-	font-size: 140px;
+	font-size: 120px;
 	margin: 0px;
 
 }
@@ -53,11 +52,13 @@ body {
 .regreso {
 	color: white;
 	background: #ff6512;
-	height: 50px;
+	height: 30px;
 	width: 200px;
 	border: none;
 	border-radius: 10px;
 	font-size: 19px;
+	text-align: center;
+	padding: 10px;
 }
 
 @media(max-width:951px) {

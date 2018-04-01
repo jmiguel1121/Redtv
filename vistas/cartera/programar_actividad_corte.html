@@ -1,0 +1,149 @@
+<html lang="en">
+
+<head>
+	<title>RedTv</title>
+
+	<meta charset="utf-8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="../../img/logo.png">
+	<link href="../../css/bootstrap.css" rel="stylesheet">
+	<!-- calendar -->
+	<link rel="stylesheet" href="../../css/calendar/fullcalendar.css">
+
+	<link rel="stylesheet" href="../../css/calendar/fullcalendar.print.css">
+	<!-- estilos -->
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+	<link href="../../css/estilosAdmin.css" rel="stylesheet">
+</head>
+
+<body>
+	<!-- menu============================================================================================== -->
+	<div id="menu">
+		<nav class="navbar navbar-inverse sidebar" role="navigation">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-sidebar-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+					<img src="../../img/logo.png" alt="">
+					<h1 style="font: oblique bold 120% cursive;">ServiRTV</h1>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="../inicio.html">Inicio<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
+						<!-- facturacion -->
+						<li><a href="#" id="consultar_factura">Consultar Factura<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
+						<li> <a id="generar_pago" href="#">Generar Pago<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
+
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Generar Reporte <span class="caret"></span><span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-cog"></span></a>
+							<ul class="dropdown-menu forAnimate" role="menu">
+								<li><a href="../cartera/cartera.html">Consultar Factura</a></li>
+								<li><a href="#">Consultar Pago</a></li>
+								<li><a href="#">Consultar Clientes</a></li>
+							</ul>
+						</li>
+						<li><a id="clientes_mora" href="#">Consultar Clientes en Mora<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
+						<li><a href="#">Generar factura Mensual<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
+
+
+						<!--  -->
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+	<!-- fin amenu ====================================================================================== -->
+
+	<div id="contenido-modulo">
+		<div id="cabecera">
+			<ul id="opcion-susario" class="nav navbar-right">
+				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="../../img/user_admin.png" alt=""> usuario<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="#"><span class="glyphicon glyphicon-cog"></span>Cambiar Cotraseña</a></li>
+						<li><a href="../error/404.html"><span class="glyphicon glyphicon-cog"></span>Error 404</a></li>
+						<li><a href="../error/500.html"><span class="glyphicon glyphicon-cog"></span>Error 500</a></li>
+						<li><a href="/index.html"><span class="glyphicon glyphicon-off"></span>salir</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<!-- informacion modulo -->
+		<div id="informaion-modulo">
+			<h1>Cartera</h1>
+			<p>Inicio/Generar Suscripcion</p>
+		</div>
+		<!--  datos  -->
+		<div id="datos-contenido">
+			<div class="tablas">
+				<legend>Programar Actividad</legend>
+				<fieldset>
+					<div id='wrap'>
+						<div id='calendar'></div>
+						<div style='clear:both'></div>
+					</div>
+					<hr class="linea-tablas">
+				</fieldset>
+				<div class="col-sm-11">
+					<br>
+					<div class="form-group">
+						<a href="#" data-target="#modalConfirmProgra" data-toggle="modal" class="btn btn-success">Finalizar</a>
+
+					</div>
+
+				</div>
+				<!-- modal -->
+				<div id="modalConfirmProgra" class="modal fade">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<legend>Registrar Pago</legend>
+
+						</div>
+						<div class="modal-body">
+							<p> Desea Finalizar y Programar La actividad en la Fecha Seleccionada</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+							<button type="button" class="btn btn-success">Programar</button>
+						</div>
+					</div>
+				</div>
+			</div>
+				<!-- din modal -->
+			</div>
+
+
+			<!-- fin datos -->
+
+		</div>
+	</div>
+
+	<footer class="py-5 bg-dark">
+		<div class="container">
+			<p class="m-0 text-center text-white">Copyright &copy; RedTv S.A</p>
+		</div>
+		<!-- /.container -->
+	</footer>
+	<!-- scripts -->
+	<script src="../../js/jquery-3.2.1.js"></script>
+	<script src="../../js/bootstrap.min.js"></script>
+
+	<!-- calendas js -->
+	<script src="../../js/calendar/jquery-ui.custom.min.js"></script>
+	<script src="../../js/calendar/fullcalendar.js"></script>
+	<script src="../../js/calendar/calendario.js"></script>
+
+
+	<!-- admin js -->
+	<script src="../../js/admin.js"></script>
+
+</body>
+
+</html>

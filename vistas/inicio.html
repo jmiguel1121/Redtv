@@ -32,47 +32,11 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-						<li><a href="#">Home<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
+						<li><a href="../vistas/control_servicos/control_servicios.html">Control de Servicios<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
+						<li><a href="../vistas/cartera/cartera.html">Cartera<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
+						<li><a href="../vistas/control_agendamiento/control_agendamiento.html">Control de Programacion<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
 						<!-- facturacion -->
-						<li><a href="#">Consultar Factura<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
-						<li><a href="#">Generar Pago<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
-
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Generar Reporte <span class="caret"></span><span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-cog"></span></a>
-							<ul class="dropdown-menu forAnimate" role="menu">
-								<li><a href="#">Consultar Factura</a></li>
-								<li><a href="#">Consultar Pago</a></li>
-								<li><a href="#">Consultar Clientes</a></li>
-							</ul>
-						</li>
-						<li><a href="#">Consultar Clientes en Mora<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
-						<li><a href="#">Generar factura Mensual<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
-
-						<!-- control de servicios -->
-						<li><a href="#">Generar Suscripcion<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
-
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Generar Servicios <span class="caret"></span><span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-cog"></span></a>
-							<ul class="dropdown-menu forAnimate" role="menu">
-								<li><a href="#">Registrar Paquete Extra</a></li>
-								<li><a href="#">Agendar Servicios</a></li>
-								<li><a href="#">servicios Solicitados</a></li>
-							</ul>
-						</li>
-						<li><a href="#">Generar Programacion Diaria<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
-						<li><a href="#">Aprobar Serivico<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
-						<!-- control de agendamiento -->
-						<li><a href="#">Servicios Agendados<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
-						<li><a href="#">historial de Agendamientos<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
-						<li><a href="#">Registrar Material<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
-
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Registrar Material <span class="caret"></span><span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-cog"></span></a>
-							<ul class="dropdown-menu forAnimate" role="menu">
-								<li><a href="#">Asignar Material</a></li>
-								<li><a href="#">REgistrar Material Instalado</a></li>
-							</ul>
-						</li>
+					
 						<!--  -->
 					</ul>
 				</div>
@@ -95,102 +59,30 @@
 			</ul>
 		</div>
 		<!-- informacion modulo -->
-		<div class="informaion-modulo">
+		<div id="informaion-modulo">
 			<h1>CONTROL DE SERIVICIOS</h1>
 			<p>Inicio/Generar Suscripcion</p>
 		</div>
 		<!--  datos  -->
-		<div class="datos">
+		<div id="datos">
 			<!-- formularios -->
-			<div id="formularios">
-				<legend>Registro de Cliente </legend>
-				<form class="form-horizontal" role="form">
-					<fieldset>
-
-						<div class="form-group">
-							<label class="col-sm-3 control-label" for="card-holder-name">Ceduala</label>
-							<div class="col-sm-8">
-								<input type="text" class="form-control" name="ceduala" id="cedula" placeholder="Ceduala">
-							</div>
-						</div>
-						<div class="form-group">
-							<label class="col-sm-3 control-label" for="card-number">Nombre</label>
-							<div class="col-sm-8">
-								<input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre">
-							</div>
-						</div>
-						<div class="form-group">
-							<label class="col-sm-3 control-label" for="card-holder-name">Apellido</label>
-							<div class="col-sm-8">
-								<input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre">
-							</div>
-						</div>
-						<div class="form-group">
-							<label class="col-sm-3 control-label" for="card-number">Direccion</label>
-							<div class="col-sm-8">
-								<input type="text" class="form-control" name="card-number" id="card-number" placeholder="Debit/Credit Card Number">
-							</div>
-						</div>
-						<div class="form-group">
-							<label class="col-sm-3 control-label" for="card-number">Telefono 1</label>
-							<div class="col-sm-8">
-								<input type="text" class="form-control" name="telefono_1" id="telefono_1" placeholder="Telefono">
-							</div>
-						</div>
-						<div class="form-group">
-							<label class="col-sm-3 control-label" for="card-number">Telefono 2</label>
-							<div class="col-sm-8">
-								<input type="text" class="form-control" name="telefono_2" id="telefono_2" placeholder="Telefono">
-							</div>
-						</div>
-						<div class="form-group">
-							<div class="col-sm-offset-3 col-sm-9">
-								<button type="button" class="btn btn-success">Generar</button>
-							</div>
-						</div>
-					</fieldset>
-				</form>
+			<div id="tablas">
+			
 			</div>
 			<!-- otros datos datos -->
-			<div class="otros-datos">
-				<legend>Servicios </legend>
-				<form class="form-horizontal" role="form">
-					<fieldset>
-
-						<div class="funkyradio col-sm-12">
-							<div class="funkyradio-success">
-								<input type="checkbox" name="checkbox" id="checkbox1" checked/>
-								<label for="checkbox1">Televicion</label>
-							</div>
-						</div>
-						<div class="funkyradio col-sm-12">
-							<div class="funkyradio-success">
-								<input type="checkbox" name="checkbox" id="checkbox2" checked/>
-								<label for="checkbox2">Internet</label>
-							</div>
-						</div>
-									
-					</fieldset>
-				</form>
-
-			</div> <!-- fin otros datos 1 -->
 			
-			<div class="otros-datos">
-				<legend>Servicios </legend>
-				<form class="form-horizontal" role="form">
-					<fieldset>
-
-					
-					</fieldset>
-				</form>
-
-			</div><!-- fin otros datos 2 -->
-
+		
 
 		</div>
 		<!-- fin datos -->
 	</div>
-
+	<!-- footer -->
+<footer class="py-5 bg-dark">
+		<div class="container">
+			<p class="m-0 text-center text-white">Copyright &copy; RedTv S.A</p>
+		</div>
+		<!-- /.container -->
+	</footer>
 	<!-- scripts -->
 	<script src="../js/jquery-3.2.1.js"></script>
 	<script src="../js/bootstrap.min.js"></script>

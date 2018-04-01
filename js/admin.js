@@ -1,25 +1,24 @@
-    function htmlbodyHeightUpdate(){
-		var height3 = $( window ).height()
-		var height1 = $('.nav').height()+50
-		height2 = $('.main').height()
-		if(height2 > height3){
-			$('html').height(Math.max(height1,height3,height2)+10);
-			$('body').height(Math.max(height1,height3,height2)+10);
-		}
-		else
-		{
-			$('html').height(Math.max(height1,height3,height2));
-			$('body').height(Math.max(height1,height3,height2));
-		}
-		
-	}
-	$(document).ready(function () {
-		htmlbodyHeightUpdate()
-		$( window ).resize(function() {
-			htmlbodyHeightUpdate()
-		});
-		$( window ).scroll(function() {
-			height2 = $('.main').height()
-  			htmlbodyHeightUpdate()
-		});
-	});
+$("#consultar_factura").click(function () {
+	$("#datos-contenido").load('consultar_factura.html');
+
+});
+$("#generar_pago").click(function () {
+
+	$("#datos-contenido").load('generar_pago.html');
+
+});
+$("#clientes_mora").click(function () {
+
+	$("#datos-contenido").load('clientes_mora.html');
+
+});
+
+$('body').on('click ','#reportar_corte',function () {
+	$("#datos-contenido").load('reportar_corte.html');
+
+});
+$('body').on('click ','#generar_facturas',function () {
+	$("#datos-contenido").load('generar_facturas.html');
+
+});
+

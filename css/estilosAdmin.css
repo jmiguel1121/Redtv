@@ -120,7 +120,7 @@
    #cabecera {
    	background: black;
    	border-bottom: solid 5px black;
-   	height: 60px;
+   	height: 50px;
    	padding: 2px;
    	color: white;
    	display: block;
@@ -137,16 +137,16 @@
 
    /* contenido=============================================================================================*/
 
-   .informaion-modulo h1 {
+   #informaion-modulo h1 {
    	font-size: 25px;
    	color: white;
-   	padding-top: 10px;
-   	margin-right: 50px;
+   	padding-top: 0px;
+   	margin-right: 30px;
    	float: right;
    	display: inline-block;
    }
 
-   .informaion-modulo p {
+   #informaion-modulo p {
    	color: white;
    	padding: 10px;
    	margin-left: 30px;
@@ -156,23 +156,30 @@
 
    #contenido-modulo {}
 
-   .informaion-modulo {
-   	height: 80px;
+   #informaion-modulo {
+   	height: 60px;
    	background: url('../img/servidores.jpg') center;
    	background-size: 100% 100%;
    	width: 100%;
 
    }
 
-   .datos {
+   #datos-contenido {
    	width: 100%;
    	padding: 20px;
    	padding: 30px;
-		display: block;
+
    }
 
    #menu {
    	display: block;
+   }
+
+   .img-perfil-form {
+   	margin: 10px;
+   	width: 150px;
+   	float: right;
+
    }
 
    #formularios {
@@ -181,35 +188,47 @@
    	padding: 20px;
    	font-size: 12px;
    	font: message-box;
+   	font-size: 19px;
    	display: inline-block;
    	margin: 5px;
-		float: left;
+   	float: left;
    }
-   #tablas {
-   	width: 90%;
+
+   .tablas {
+   	width: 100%;
    	background: white;
    	padding: 20px;
+   	padding-bottom: 50px;
    	font-size: 12px;
    	font: message-box;
+   	font-size: 14px;
    	display: inline-block;
    	margin: 5px;
-		float: left;
-				margin-bottom: 50px;
+   	float: left;
+   	margin-bottom: 30px;
 
    }
 
+   .table tbody tr td {
 
-   .form-group {
-   	margin-top: 20px;
+   	border-top: 2px solid #0c4554;
+   	text-align: center;
+   	padding: 5px;
+
    }
 
+   .table tbody tr:hover {
 
-   #formularios legend {
-   	background: red;
-   	height: 40px;
-   	background: linear-gradient(135deg, rgba(9, 127, 148, 1) 0%, rgba(58, 201, 191, 1) 40%, rgba(37, 133, 114, 1) 68%, rgba(162, 235, 211, 1) 100%);
-   	padding: 10px;
+   	background: #c7d6d4;
+
+   }
+
+   .table thead tr th {
+
+   	background: #615c61;
    	color: white;
+   	text-align: center;
+   	border-left: solid 1px white;
    }
 
    .otros-datos {
@@ -220,21 +239,75 @@
    	font: message-box;
    	display: inline-table;
    	margin: 5px;
-		float: left;
+   	float: left;
 
 
    }
 
-   .otros-datos legend {
+   legend {
 
-   	height: 40px;
-   	background: linear-gradient(135deg, rgba(9, 127, 148, 1) 0%, rgba(58, 201, 191, 1) 40%, rgba(37, 133, 114, 1) 68%, rgba(162, 235, 211, 1) 100%);
+   	height: 45px;
+   	background: linear-gradient(45deg, rgba(26, 80, 94, 1) 0%, rgba(5, 48, 59, 1) 29%, rgba(31, 57, 64, 1) 54%, rgba(1, 51, 64, 1) 71%, rgba(36, 74, 82, 1) 100%);
    	padding: 10px;
    	color: white;
+   	margin-bottom: 10px;
    }
+
 
    .form-control {
    	border: 2px solid #168072;
+   	display: block;
+   	width: 100%;
+   }
+
+   .btn-success {
+   	background: #008080;
+   	float: right;
+   }
+
+   .btn-success:hover {
+   	background: #044444;
+
+   }
+
+   .btn-success:focus {
+   	background: #044444;
+
+   }
+
+   .form-group label {
+   	font-size: 17px;
+   	text-align: right;
+   	padding: 6px;
+
+   }
+
+   .datos-usuarios {
+   	border: solid 2px #008080;
+   	width: 100%;
+   	margin-bottom: 10px;
+   	border-radius: 0px 8px 8px 0px;
+   	text-align: center !important;
+   }
+
+   .titulo-datos {
+   	text-align: center;
+   	margin: 0px;
+   	font-size: 30px;
+
+   }
+
+   .titulo-datos-2 {
+   	text-align: center;
+   	margin: 0px;
+   	font-size: 20px;
+   }
+
+   .linea-tablas {
+   	border: solid 2px #00222b;
+   	width: 98%;
+   	margin: 0px;
+
    }
 
    /* check box  _________________________________*/
@@ -250,6 +323,7 @@
    	border: 2px solid #168072;
    	font: message-box;
 
+
    }
 
    .funkyradio input[type="checkbox"]:empty {
@@ -259,13 +333,15 @@
    .funkyradio input[type="checkbox"]:empty ~ label {
    	position: relative;
    	line-height: 2em;
-   	text-indent: 3.25em;
+   	text-indent: 3.25em !important;
    	margin-top: 0em;
    	cursor: pointer;
    	-webkit-user-select: none;
    	-moz-user-select: none;
    	-ms-user-select: none;
    	user-select: none;
+   	text-align: left !important;
+   	padding: 0px !important;
    }
 
 
@@ -295,6 +371,17 @@
    	color: #fff;
    	background-color: green;
 
+   }
+
+   /* estilos modal ===================================*/
+
+   .modal {
+   	font: message-box;
+   }
+
+   .modal legend {
+   	text-align: center;
+   	margin: 0px;
    }
 
 
@@ -374,7 +461,7 @@
    		height: 100%;
    		margin-left: -160px;
    		float: left;
-   		z-index: 8000;
+   		z-index: 4;
    		margin-bottom: 0px;
    	}
 
@@ -387,6 +474,9 @@
    	nav.sidebar:hover {
    		margin-left: 0px;
    	}
+   	.navbar-inverse {
+   		position: fixed;
+   	}
 
    }
 
@@ -394,7 +484,7 @@
 
    @media (min-width: 1330px) {
 
-      	/*Show all nav*/
+   	/*Show all nav*/
    	nav.sidebar {
    		margin-left: 0px;
    		float: left;
@@ -405,7 +495,7 @@
    	}
    	#contenido-modulo {
    		margin-left: 200px;
-   		height: 100%;
+   		height: autos;
    	}
    	.navbar-inverse {
    		position: fixed;
@@ -424,14 +514,16 @@
    	}
 
    }
-/* footer ===============================================================-*/
 
-footer {
-  background-color: black;
-	clear: both; 
-/*	display: fixed ;*/
-  top: 0;
-  width: 100%;
-  height: 40px;
-  color: white;
-}
+   /* footer ===============================================================-*/
+
+   footer {
+   	text-align: center;
+   	background-color: black;
+   	clear: both;
+   	/*	display: fixed ;*/
+   	top: 0;
+   	width: 100%;
+   	height: 40px;
+   	color: white;
+   }

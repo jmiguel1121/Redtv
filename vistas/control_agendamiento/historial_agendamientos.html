@@ -1,0 +1,196 @@
+<div class="tablas">
+	<legend>Historial Agendamientos</legend>
+	<fliedset>
+
+		<div class="col-sm-12">
+			<form action="">
+				<div class="form-group col-sm-4">
+					<label class="col-sm-5 control-label" for="card-number">Fecha Inical</label>
+					<div class="col-sm-7">
+						<input type="date" class="form-control" placeholder="Buscar">
+
+					</div>
+				</div>
+				<div class="form-group col-sm-4">
+					<label class="col-sm-4 control-label" for="card-number">Fecha Final</label>
+					<div class="col-sm-8">
+						<input type="date" class="form-control" placeholder="Buscar">
+
+					</div>
+				</div>
+			</form>
+			<form action="">
+				<div class="form-group col-sm-4">
+					<label class="col-sm-3 control-label" for="card-number">Buscar</label>
+					<div class="col-sm-9">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Buscar">
+							<div class="input-group-btn">
+								<button style="padding: 9px 12px; background: silver" class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<hr class="linea-tablas">
+		<br>
+		<table class="responsivetable table">
+
+			<thead>
+				<tr>
+					<th>Tecnico</th>
+					<th>Fecha</th>
+					<th>Direccion</th>
+					<th>Actividad Tecnica</th>
+					<th>Cliente</th>
+					<th>Estado</th>
+					<th>Detalle</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<!-- filas -->
+				<tr>
+					<td>jhon Roy</td>
+					<td>02-23-2018</td>
+					<td>cll 23 97-12</td>
+					<td>mantenimiento</td>
+					<td>Steve Foo</td>
+					<td>cancelado</td>
+					<td>
+						<a data-target="#detalle_agendamiento" data-toggle="modal" id="" class="btn btn-info btn-md" href="#"><i class="glyphicon glyphicon-eye-open"></i></a>
+					</td>
+				</tr>
+				<!-- filas -->
+				<tr>
+					<td>jhon Roy</td>
+					<td>02-23-2018</td>
+					<td>cll 23 97-12</td>
+					<td>mantenimiento</td>
+					<td>Steve Foo</td>
+					<td>activo</td>
+					<td>
+						<a data-target="#detalle_agendamiento" data-toggle="modal" id="" class="btn btn-info btn-md" href="#">
+										<i class="glyphicon glyphicon-eye-open"></i></a>
+					</td>
+				</tr>
+				<!-- filas -->
+				<tr>
+					<td>jhon Roy</td>
+					<td>02-23-2018</td>
+					<td>cll 23 97-12</td>
+					<td>mantenimiento</td>
+					<td>Steve Foo</td>
+					<td>reagendado</td>
+					<td>
+						<a data-target="#detalle_agendamiento" data-toggle="modal" id="" class="btn btn-info btn-md" href="#">
+										<i class="glyphicon glyphicon-eye-open"></i></a>
+					</td>
+				</tr>
+				<!-- filas -->
+				<tr>
+					<td>jhon Roy</td>
+					<td>02-23-2018</td>
+					<td>cll 23 97-12</td>
+					<td>mantenimiento</td>
+					<td>Steve Foo</td>
+					<td>cancelado</td>
+					<td>
+						<a data-target="#detalle_agendamiento" data-toggle="modal" id="" class="btn btn-info btn-md" href="#">
+										<i class="glyphicon glyphicon-eye-open"></i></a>
+					</td>
+				</tr>
+				<!-- filas -->
+				<tr>
+					<td>jhon Roy</td>
+					<td>02-23-2018</td>
+					<td>cll 23 97-12</td>
+					<td>mantenimiento</td>
+					<td>Steve Foo</td>
+					<td>activo</td>
+					<td>
+						<a data-target="#detalle_agendamiento" data-toggle="modal" id="" class="btn btn-info btn-md" href="#">
+										<i class="glyphicon glyphicon-eye-open"></i></a>
+					</td>
+				</tr>
+				<!-- filas -->
+				<tr>
+					<td>jhon Roy</td>
+					<td>02-23-2018</td>
+					<td>cll 23 97-12</td>
+					<td>mantenimiento</td>
+					<td>Steve Foo</td>
+					<td>reagendado</td>
+					<td>
+						<a data-target="#detalle_agendamiento" data-toggle="modal" id="" class="btn btn-info btn-md" href="#">
+										<i class="glyphicon glyphicon-eye-open"></i></a>
+					</td>
+				</tr>
+			</tbody>
+
+		</table>
+		<hr class="linea-tablas">
+
+		<ul class="pagination">
+			<li><a href="#">1</a></li>
+			<li class="active"><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="#">4</a></li>
+			<li><a href="#">5</a></li>
+		</ul>
+	</fliedset>
+</div>
+<!-- modal detalle agendamiento -->
+<div id="detalle_agendamiento" class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<legend>Notificacion</legend>
+
+			</div>
+			<div class="modal-body">
+
+				<fieldset>
+					<form action="">
+						<div class="col-sm-12">
+							<div class="form-group col-sm-12">
+								<label class="col-sm-4 control-label" for="card-number">Cliente</label>
+								<div class="col-sm-8">
+									<label class="datos-usuarios" for="">Steve Foo</label>
+								</div>
+							</div>
+							<div class="form-group col-sm-12">
+								<label class="col-sm-4 control-label" for="card-number">Tecnico</label>
+								<div class="col-sm-8">
+									<label class="datos-usuarios" for="">jhon Roy</label>
+								</div>
+							</div>
+							<div class="form-group col-sm-12">
+								<label class="col-sm-4 control-label" for="card-number">Fecha Modificacion</label>
+								<div class="col-sm-8">
+									<label class="datos-usuarios" for="">13-04-2018</label>
+								</div>
+							</div>
+							<div class="form-group col-sm-12">
+								<label class="col-sm-4 control-label" for="card-number">Obsrvacion</label>
+								<div class="col-sm-8">
+									<label class="datos-usuarios" for="">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque fuga, similique aperiam autem illo dolor, harum exercitationem sit voluptates. Vel provident dicta sit est impedit hic non alias numquam, iste!
+												</label>
+								</div>
+							</div>
+						</div>
+
+					</form>
+
+				</fieldset>
+
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- modal detalle agendamiento -->

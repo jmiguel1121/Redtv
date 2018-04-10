@@ -3,6 +3,7 @@
    	background: linear-gradient(45deg, rgba(255, 255, 255, 1) 0%, rgba(178, 174, 177, 1) 28%, rgba(210, 207, 209, 1) 39%, rgba(250, 250, 250, 1) 53%, rgba(219, 219, 219, 1) 71%, rgba(255, 255, 255, 1) 85%, rgba(255, 255, 255, 1) 100%) center fixed no-repeat;
    	background-size: 100% 100%;
    	font-family: Impact, fantasy;
+		min-width: 750px;
    }
 
    /* estilos menu ===============================================================================================================*/
@@ -177,7 +178,7 @@
 
    .img-perfil-form {
    	margin: 10px;
-   	width: 150px;
+   	width: 190px;
    	float: right;
 
    }
@@ -231,6 +232,32 @@
    	border-left: solid 1px white;
    }
 
+   .tablas-material thead tr th {
+
+   	background: #3a393b;
+   	color: white;
+   	text-align: center;
+   	border-left: solid 1px white;
+   }
+
+
+   .tablas-material tbody tr td {
+   	border-top: 0px !important;
+   	padding: 1px;
+   	margin: 1px;
+   }
+
+   .tablas-material tbody tr td label {
+   	margin: 1px;
+   	padding: 4px;
+   }
+
+   .tablas-material tbody tr:hover {
+
+   	background: white;
+
+   }
+
    .otros-datos {
    	width: 35%;
    	background: white;
@@ -263,6 +290,7 @@
    .btn-success {
    	background: #008080;
    	float: right;
+		
    }
 
    .btn-success:hover {
@@ -288,6 +316,8 @@
    	margin-bottom: 10px;
    	border-radius: 0px 8px 8px 0px;
    	text-align: center !important;
+   	padding: 5px;
+
    }
 
    .titulo-datos {
@@ -305,8 +335,9 @@
 
    .linea-tablas {
    	border: solid 2px #00222b;
-   	width: 98%;
+   	width: 100%;
    	margin: 0px;
+		display: inline-block;
 
    }
 

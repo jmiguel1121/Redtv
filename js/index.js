@@ -1,6 +1,6 @@
 /* cargar modal ============================================*/
 $(Document).ready(function () {
-	$("#vista-modal").load('vistas/modal.html');
+	$("#vista-modal").load("vistas/modal.html");
 });
 
 
@@ -51,4 +51,3 @@ $("body").on('click', '#recuperar-contraseña', function () {
 	$("#contenido-recuperacion").show("slow");
 
 });
-recuperar - contraseña

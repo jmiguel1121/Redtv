@@ -1,0 +1,243 @@
+<div class="tablas">
+	<legend>Clientes En Mora</legend>
+	<fliedset>
+		<div class="form-group col-sm-4" style="float: right">
+			<label class="col-sm-3 control-label" for="card-number">Buscar</label>
+			<div class="col-sm-9">
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="Buscar">
+					<div class="input-group-btn">
+						<button style="padding: 9px 12px; background: silver" class="btn btn-default" type="submit">
+								  <i class="glyphicon glyphicon-search"></i>
+								</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr class="linea-tablas">
+		<br>
+		<table class="responstable table">
+
+			<thead>
+				<tr>
+					<th>Tecnico</th>
+					<th>Fecha</th>
+					<th>Direccion</th>
+					<th>Actividad Tecnica</th>
+					<th>Cliente</th>
+					<th>Consecutivo</th>
+					<th>ReAgendar</th>
+					<th>Cambiar estado</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<!-- filas -->
+				<tr>
+					<td>jhon Roy</td>
+					<td>02-23-2018</td>
+					<td>cll 23 97-12</td>
+					<td>mantenimiento</td>
+					<td>Steve Foo</td>
+
+					<td>3</td>reagendar
+					<td>
+						<button data-target="#reagendar" data-toggle="modal" class="btn btn-warning btn-md">
+										<i class="glyphicon glyphicon-exclamation-sign"></i>
+									</button>
+					</td>
+					<td>
+						<a data-target="#cambiarEstado" data-toggle="modal" id="" class="btn btn-info btn-md" href="#">
+										<i class="glyphicon glyphicon-check"></i>
+						</a>
+					</td>
+				</tr>
+				<!-- filas -->
+				<tr>
+					<td>jhon Roy</td>
+					<td>02-23-2018</td>
+					<td>cll 23 97-12</td>
+					<td>mantenimiento</td>
+					<td>Steve Foo</td>
+
+					<td>3</td>reagendar
+					<td>
+						<button data-target="#reagendar" data-toggle="modal" class="btn btn-warning btn-md">
+										<i class="glyphicon glyphicon-exclamation-sign"></i>
+									</button>
+					</td>
+					<td>
+						<a data-target="#cambiarEstado" data-toggle="modal" id="" class="btn btn-info btn-md" href="#">
+										<i class="glyphicon glyphicon-check"></i>
+						</a>
+					</td>
+				</tr>
+				<!-- filas -->
+				<tr>
+					<td>jhon Roy</td>
+					<td>02-23-2018</td>
+					<td>cll 23 97-12</td>
+					<td>mantenimiento</td>
+					<td>Steve Foo</td>
+
+					<td>3</td>reagendar
+					<td>
+						<button data-target="#reagendar" data-toggle="modal" class="btn btn-warning btn-md">
+										<i class="glyphicon glyphicon-exclamation-sign"></i>
+									</button>
+					</td>
+					<td>
+						<a data-target="#cambiarEstado" data-toggle="modal" id="" class="btn btn-info btn-md" href="#">
+										<i class="glyphicon glyphicon-check"></i>
+						</a>
+					</td>
+				</tr>
+				<!-- filas -->
+				<tr>
+					<td>jhon Roy</td>
+					<td>02-23-2018</td>
+					<td>cll 23 97-12</td>
+					<td>mantenimiento</td>
+					<td>Steve Foo</td>
+
+					<td>3</td>reagendar
+					<td>
+						<button data-target="#reagendar" data-toggle="modal" class="btn btn-warning btn-md">
+										<i class="glyphicon glyphicon-exclamation-sign"></i>
+									</button>
+					</td>
+					<td>
+						<a data-target="#cambiarEstado" data-toggle="modal" id="" class="btn btn-info btn-md" href="#">
+										<i class="glyphicon glyphicon-check"></i>
+						</a>
+					</td>
+				</tr>
+				<!-- filas -->
+				<tr>
+					<td>jhon Roy</td>
+					<td>02-23-2018</td>
+					<td>cll 23 97-12</td>
+					<td>mantenimiento</td>
+					<td>Steve Foo</td>
+
+					<td>3</td>reagendar
+					<td>
+						<button data-target="#reagendar" data-toggle="modal" class="btn btn-warning btn-md">
+										<i class="glyphicon glyphicon-exclamation-sign"></i>
+									</button>
+					</td>
+					<td>
+						<a data-target="#cambiarEstado" data-toggle="modal" id="" class="btn btn-info btn-md" href="#">
+										<i class="glyphicon glyphicon-check"></i>
+						</a>
+					</td>
+				</tr>
+			</tbody>
+
+		</table>
+		<hr class="linea-tablas">
+
+		<ul class="pagination">
+			<li><a href="#">1</a></li>
+			<li class="active"><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="#">4</a></li>
+			<li><a href="#">5</a></li>
+		</ul>
+	</fliedset>
+</div>
+<!-- modal cambiar estado -->
+<div id="cambiarEstado" class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<legend>Notificacion</legend>
+
+			</div>
+			<div class="modal-body">
+
+				<fieldset>
+					<form action="">
+						<div class="col-sm-12">
+							<div class="form-group col-sm-12">
+								<label class="col-sm-4 control-label" for="card-number">Cliente</label>
+								<div class="col-sm-8">
+									<label class="datos-usuarios" for="">Steve Foo</label>
+								</div>
+							</div>
+							<div class="form-group col-sm-12">
+								<label class="col-sm-4 control-label" for="card-number">estado</label>
+								<div class="col-sm-8">
+									<select class="form-control">
+										  <option value="">Selecione...</option>
+										  <option value="">Activo</option>
+										  <option value="">Cancelado</option>
+										</select>
+								</div>
+							</div>
+
+							<div class="form-group col-sm-12">
+								<label class="col-sm-4 control-label" for="card-number">Observaciones</label>
+								<div class="col-sm-8">
+									<textarea placeholder="mensaje de notificacion" class="form-control" name="mensaje" id="" cols="39" rows="4"></textarea>
+								</div>
+							</div>
+
+						</div>
+
+					</form>
+
+				</fieldset>
+
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+				<button type="button" class="btn btn-success">Cambiar</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- fin cmodal cambiar estado -->
+
+<!-- modal reagendar -->
+<div id="reagendar" class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<legend>Notificacion</legend>
+
+			</div>
+			<div class="modal-body">
+
+				<fieldset>
+					<form action="">
+						<div class="col-sm-12">
+							<div class="form-group col-sm-12">
+								<label class="col-sm-4 control-label" for="card-number">Cliente</label>
+								<div class="col-sm-8">
+									<label class="datos-usuarios" for="">Steve Foo</label>
+								</div>
+							</div>
+
+							<div class="form-group col-sm-12">
+								<label class="col-sm-4 control-label" for="card-number">Movido por el que se reagenda</label>
+								<div class="col-sm-8">
+									<textarea placeholder="mensaje" class="form-control" name="mensaje" id="" cols="39" rows="4"></textarea>
+								</div>
+							</div>
+
+						</div>
+
+					</form>
+
+				</fieldset>
+
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+				<a href="cronograma_reagendar.html" type="button" class="btn btn-success">Agendar</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- fin modal reagendar -->

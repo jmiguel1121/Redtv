@@ -1,8 +1,8 @@
-$("#consultar_factura").click(function () {
+$('body').on('click','#consultar_factura',function () {
 	$("#datos-contenido").load('consultar_factura.html');
 
 });
-$("#generar_pago").click(function () {
+$('body').on('click','#generar_pago',function () {
 
 	$("#datos-contenido").load('generar_pago.html');
 
@@ -21,4 +21,58 @@ $('body').on('click ','#generar_facturas',function () {
 	$("#datos-contenido").load('generar_facturas.html');
 
 });
+$("#generar_suscripcion").click(function () {
+
+	$("#datos-contenido").load('generar_suscripcion.html');
+	
+});
+$('body').on('click ','#generar_servicio',function () {
+
+	$("#datos-contenido").load('generar_servicio.html');
+	
+});
+$('body').on('click ','#generar_servicio_actividad',function () {
+
+	$("#datos-contenido").load('generar_servicio_actividad.html');
+	
+});
+$('body').on('click ','#generar_servicio_extra',function () {
+
+	$("#datos-contenido").load('generar_servicio_extra.html');
+	
+});
+$('body').on('click ','#generar_progracion_diaria',function () {
+
+	$("#datos-contenido").load('generar_progracion_diaria.html');
+	
+});
+$('body').on('click ','#autorizar_servicio',function () {
+
+	$("#datos-contenido").load('autorizar_servicio.html');
+	
+});
+$('body').on('click ','#detalle_autorizar_servicio',function () {
+
+	$("#datos-contenido").load('detalle_autorizar_servicio.html');
+	
+});
+$('body').on('click ','#servicios_agendados',function () {
+
+	$("#datos-contenido").load('servicios_agendados.html');
+	
+});
+$('body').on('click ','#historial_agendamientos',function () {
+
+	$("#datos-contenido").load('historial_agendamientos.html');
+	
+});
+$('body').on('click ','#registrar_material',function () {
+
+	$("#datos-contenido").load('registrar_material.html');
+	
+});
+
+
+
+
 

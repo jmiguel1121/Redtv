@@ -1,0 +1,104 @@
+	<div class="tablas">
+			<fieldset>
+
+
+				<div class="col-sm-4">
+					<div class="form-group col-sm-10">
+						<img class="img-perfil-form" src="../../img/user_admin.png" alt="">
+					</div>
+					<div class="form-group">
+						<label class="col-sm-3 control-label" for="card-number"></label>
+						<div class="col-sm-8">
+							<h1 class="titulo-datos-2">Datos cliente</h1>
+
+							<hr class="linea-tablas">
+							<br>
+							<label class="" for="">Steven Foo</label>
+							<label class="" for="">stevenfoo@example.com</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6">
+					<div class="form-group col-sm-12">
+						<legend class="titulo-datos">Datos Actividad</legend>
+						<hr class="linea-tablas">
+					</div>
+					<!-- datos cliente -->
+
+					<div class="form-group col-sm-12">
+						<label class="col-sm-4 control-label" for="card-number">Actividad Tecnica</label>
+						<div class="col-sm-8">
+							<select class="form-control">
+										  <option value="">Seleccione...</option>
+										  <option value="">Mantenimiento</option>
+										  <option value="">Traslado</option>
+										</select>
+						</div>
+					</div>
+
+					<div class="form-group col-sm-12">
+						<label class="col-sm-4 control-label" for="card-number">Servicios :</label>
+						<div class="col-sm-8">
+							<div class="funkyradio col-sm-12">
+								<div class="funkyradio-success">
+									<input type="checkbox" name="checkbox" id="checkbox1" checked/>
+									<label for="checkbox1">Televicion</label>
+								</div>
+							</div>
+							<div class="funkyradio col-sm-12">
+								<br>
+								<div class="funkyradio-success">
+									<input type="checkbox" name="checkbox" id="checkbox2" checked/>
+									<label for="checkbox2">Internet</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- datos cliente -->
+					<div class="form-group col-sm-12">
+
+						<label class="col-sm-4 control-label" for="card-number">Valor Adicional</label>
+						<div class="col-sm-8">
+							<label class="datos-usuarios" for="">10000</label>
+
+						</div>
+					</div>
+					<div class="form-group col-sm-12">
+						<label class="col-sm-4 control-label" for="card-number">Observaciones</label>
+						<div class="col-sm-8">
+							<textarea class="form-control" name="" id="" cols="45" rows="5"></textarea>
+						</div>
+
+					</div>
+
+					<div class="form-group">
+						<hr class="linea-tablas">
+						<div class="col-sm-12">
+							<br>
+							<a data-target="#modalServicioCliente" data-toggle="modal" href="#" id="" class="btn btn-success btn-lg btn-block">Solicitar</a>
+						</div>
+					</div>
+
+				</div>
+			</fieldset>
+		</div>
+		<!-- modal confirmacion -->
+		<div id="modalServicioCliente" class="modal fade">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<legend>Mensaje</legend>
+
+					</div>
+					<div class="modal-body">
+						<p>Desea guardar los datos y solicitar la Actividad</p>
+						<p>Si Desea aceptar su Solicitud el sistema enviara la solicitud y sera contatado por nuestro personal para confirmar su solicitud y darle ejecucion a su solicitud. </p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+						<button type="button" class="btn btn-success">Guardar Registro</button>
+					</div>
+				</div>
+			</div>
+		</div>

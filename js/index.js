@@ -51,3 +51,21 @@ $("body").on('click', '#recuperar-contraseña', function () {
 	$("#contenido-recuperacion").show("slow");
 
 });
+$("body").on('click', '#ingresar', function () {
+
+	var perfil = $("#perfil").val();
+	
+	
+	if(perfil=="usuario"){
+		alert(perfil);
+		$("#ingresar","").attr("href",'vistas/inicio.html');
+		
+	}else if(perfil=="cliente"){
+		alert(perfil);
+		$("#ingresar","").attr("href","vistas/Cliente/cliente_inicio.html");
+
+	}else{
+		alert('seleccione un perfil');
+	}
+
+});

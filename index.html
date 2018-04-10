@@ -159,110 +159,119 @@
 	</div>
 	<!-- fin contenido principal ============================================================ -->
 	<!-- modal  login ************************************************************ -->
-<!-- Modal -->
-<div id="modallLogin" class="modal fade" role="dialog">
-	<div class="modal-dialog  modal-sm">
-		<!-- Modal content-->
-		<div class="modal-content">
+	<!-- Modal -->
+	<div id="modallLogin" class="modal fade" role="dialog">
+		<div class="modal-dialog  modal-sm">
+			<!-- Modal content-->
+			<div class="modal-content">
 
-			<div class="modal-body">
-				<!-- contenido modal **************************************************- -->
-				<div id="datosLogin">
-					<div class="row">
-						<div class="col-lg-12 col-md-12">
-							<div class="logoLogin">
-								<img src="img/logo.png" alt="">
+				<div class="modal-body">
+					<!-- contenido modal **************************************************- -->
+					<div id="datosLogin">
+						<div class="row">
+							<div class="col-lg-12 col-md-12">
+								<div class="logoLogin">
+									<img src="img/logo.png" alt="">
+								</div>
+								<div id="contenido-login">
+									<form action="" id="form_login">
+										<!-- formulario ingresar -->
+										<div class="input-group">
+											<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span>
+											</span>
+											<input type="text" class="form-control" placeholder="Usuario" />
+										</div>
+										<br>
+										<div class="input-group">
+											<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+											<input type="password" class="form-control" placeholder="Contraeña" />
+										</div>
+										<br>
+										<div class="input-group">
+											<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+											<select id="perfil" class="form-control">
+												  <option value="">Perfil</option>
+												  <option value="usuario">usuario</option>
+												  <option value="cliente">cliente</option>
+												</select>
+										</div>
+										<a href="#" id="recuperar-contraseña" style="float: right;font-size: 12px;">Recuperar Contraseña</a>
+										<hr>
+										
+										<a id="ingresar" type="button" class="brnIngresar btn btn-lg" href="#">Ingresar</a>
+
+									</form>
+									<!-- fin formulario -->
+									<p>No Tienes una cuenta Registrate <a id="ver-registro" href="#">aqui</a></p>
+
+								</div>
+
+								<!-- form registrar ================================================================================ -->
+
+								<div id="contenido-registro" style="display: none;">
+									<form id="form-regidtro" action="">
+										<div class="input-group">
+											<span class="input-group-addon"><span class="glyphicon glyphicon-list-alt"></span>
+											</span>
+											<input type="text" class="form-control" placeholder="Nombre" />
+										</div>
+										<br>
+										<div class="input-group">
+											<span class="input-group-addon"><span class="glyphicon glyphicon-list-alt"></span>
+											</span>
+											<input type="text" class="form-control" placeholder="Apellido" />
+										</div>
+										<br>
+										<div class="input-group">
+											<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span>
+											</span>
+											<input type="text" class="form-control" placeholder="Nombre de Usuario" />
+										</div>
+										<br>
+										<div class="input-group">
+											<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+											<input type="password" class="form-control" placeholder="Contraeña" />
+										</div>
+										<br>
+										<div class="input-group">
+											<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span>
+											</span>
+											<input type="text" class="form-control" placeholder="Confirmar Contrasña" />
+										</div>
+										<br>
+										<button type="button" class="brnIngresar btn btn-lg">Registrar</button>
+
+									</form>
+									<p>Tienes una cuenta ? ingresa a <a id="ver-login" href="#">aqui</a></p>
+								</div>
+								<!-- recuperar contraseña -->
+								<div class="" id="contenido-recuperacion">
+									<form id="form-recuperacion" action="">
+										<p>Por Favor Ingrese su Correo Para Confirmar Su Cuenta</p>
+
+										<div class="input-group">
+											<span class="input-group-addon"><span class="glyphicon glyphicon-list-alt"></span>
+											</span>
+											<input type="text" class="form-control" placeholder="Ingrese su correo" />
+										</div>
+										<br>
+										<button type="button" class="brnIngresar btn btn-lg">Enviar</button>
+									</form>
+									<p>No Tienes una cuenta? Registrate <a id="ver-registro" href="#">aqui</a></p>
+
+								</div>
+
 							</div>
-							<div id="contenido-login">
-								<form action="" id="form_login">
-									<!-- formulario ingresar -->
-									<div class="input-group">
-										<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span>
-										</span>
-										<input type="text" class="form-control" placeholder="Usuario" />
-									</div>
-									<br>
-									<div class="input-group">
-										<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-										<input type="password" class="form-control" placeholder="Contraeña" />
-									</div>
-									<a href="#" id="recuperar-contraseña" style="float: right;font-size: 12px;">Recuperar Contraseña</a>
-									<hr>
-								
-									<a type="button" class="brnIngresar btn btn-lg" href="vistas/inicio.html">Ingresar</a>
-
-								</form>
-								<!-- fin formulario -->
-								<p>No Tienes una cuenta Registrate <a id="ver-registro" href="#">aqui</a></p>
-
-							</div>
-
-							<!-- form registrar ================================================================================ -->
-
-							<div id="contenido-registro" style="display: none;">
-								<form id="form-regidtro" action="">
-									<div class="input-group">
-										<span class="input-group-addon"><span class="glyphicon glyphicon-list-alt"></span>
-										</span>
-										<input type="text" class="form-control" placeholder="Nombre" />
-									</div>
-									<br>
-									<div class="input-group">
-										<span class="input-group-addon"><span class="glyphicon glyphicon-list-alt"></span>
-										</span>
-										<input type="text" class="form-control" placeholder="Apellido" />
-									</div>
-									<br>
-									<div class="input-group">
-										<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span>
-										</span>
-										<input type="text" class="form-control" placeholder="Nombre de Usuario" />
-									</div>
-									<br>
-									<div class="input-group">
-										<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-										<input type="password" class="form-control" placeholder="Contraeña" />
-									</div>
-									<br>
-									<div class="input-group">
-										<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span>
-										</span>
-										<input type="text" class="form-control" placeholder="Confirmar Contrasña" />
-									</div>
-									<br>
-									<button type="button" class="brnIngresar btn btn-lg">Registrar</button>
-
-								</form>
-								<p>Tienes una cuenta ? ingresa a <a id="ver-login" href="#">aqui</a></p>
-							</div>
-							<!-- recuperar contraseña -->
-							<div class="" id="contenido-recuperacion">
-								<form id="form-recuperacion" action="">
-									<p>Por Favor Ingrese su Correo Para Confirmar Su Cuenta</p>
-
-									<div class="input-group">
-										<span class="input-group-addon"><span class="glyphicon glyphicon-list-alt"></span>
-										</span>
-										<input type="text" class="form-control" placeholder="Ingrese su correo" />
-									</div>
-									<br>
-									<button type="button" class="brnIngresar btn btn-lg">Enviar</button>
-								</form>
-								<p>No Tienes una cuenta? Registrate <a id="ver-registro" href="#">aqui</a></p>
-
-							</div>
-
 						</div>
+						<!--  fin row login -->
 					</div>
-					<!--  fin row login -->
+					<!-- fin datos login ******************************************* -->
+					<!-- fin contenido modal *********************************************- -->
 				</div>
-				<!-- fin datos login ******************************************* -->
-				<!-- fin contenido modal *********************************************- -->
 			</div>
 		</div>
 	</div>
-</div>
-<!-- fin modal  login -------------------------------------------------------------------------- -->
+	<!-- fin modal  login -------------------------------------------------------------------------- -->
 
 	<!-- Footer -->
 	<footer class="py-5 bg-dark">

@@ -168,9 +168,9 @@ footer {
 }
 
 .logoLogin {
-	margin-left: 30%;
-	margin-right: 30%;
-	width: 40%;
+	margin-left: 40%;
+	margin-right: 40%;
+	width: 20%;
 	height: 50px;
 	margin-bottom: 10px;
 }
@@ -404,4 +404,12 @@ footer {
 /* estilos contacto =========================================================================*/
 header img{
 	width: 50px;
+}
+/* texto validaciones*/
+.invalid-feedback{
+	color:red;
+	height: 100%;
+	width: 100%;
+	font-family: "calibri", Garamond, 'Comic Sans';
+
 }

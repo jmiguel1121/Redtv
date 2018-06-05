@@ -6,8 +6,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="img/logo.png">
+
 	<link href="css/bootstrap.css" rel="stylesheet">
-	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/sweetalert2.css">
 	<link href="css/estilosIndex.css" rel="stylesheet">
 
 </head>
@@ -19,11 +20,11 @@
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
 				<img class="logo" src="img/logo.png" alt="">
 			</div>
 
@@ -31,10 +32,18 @@
 			<div class="collapse navbar-collapse" id="navbar-collapse-1">
 
 				<ul class="nav navbar-nav navbar-right">
-					<li><a id="inicio" href="#">Inicio</a></li>
-					<li><a id="servicios" href="#">Nosotros</a></li>
-					<li><a id="contactenos" href="#">Contactenos</a></li>
-					<li><a href="#" data-toggle="modal" data-target="#modallLogin">login</a></li>
+					<li>
+						<a id="inicio" href="#">Inicio</a>
+					</li>
+					<li>
+						<a id="servicios" href="#">Nosotros</a>
+					</li>
+					<li>
+						<a id="contactenos" href="#">Contactenos</a>
+					</li>
+					<li>
+						<a href="#" data-toggle="modal" data-target="#modallLogin">login</a>
+					</li>
 				</ul>
 			</div>
 			<!-- /.navbar-collapse -->
@@ -47,251 +56,361 @@
 	<!-- contenido principal ============================================================ -->
 	<!-- Page Content -->
 	<div id="presentacion">
-		<h2 class="my-4 titulo">Red TV
-			<!-- titulo -->
-			<small>Telecomunicaciones</small>
-		</h2>
-		<!-- <h1><img src="img/presentacin.jpg" alt="">Entretenimiento para todos</h1> -->
-		<h1><i class="centercode"></i>Entretenimiento</h1>
-		<!-- Slogan -->
-		<h1><i class="centercode"></i>Para todos</h1>
-		<!-- Slogan -->
-	</div>
-	<!-- fin presentacion -->
 
-	<!-- fin contenido -->
-	<div class="container contenido">
-		<!--  servicios ======================================================================================== -->
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
 
-		<h3 class="my-4">Nuestros Servicios</h3>
-		<!-- 1 -->
-		<div class="descripcion col-md-4 col-sm-6 mb-4">
-			<div class="informacion col-lg-12">
-				<img src="img/satelite.png" alt="">
-			</div>
-			<div class="informacionTexto col-lg-12">
-				<h2>Cobertura</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus aliquam, atque sequi ducimus nam reprehenderit architecto tempore id laboriosam quia error rem ipsa facilis delectus quam iusto odio perspiciatis, cum.</p>
-			</div>
-		</div>
-		<div class="descripcion col-md-4 col-sm-6 mb-4">
-			<div class="informacion col-lg-12">
-				<img src="img/internet.png" alt="">
-			</div>
-			<div class="informacionTexto col-lg-12">
-				<h2>Internet</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus aliquam, atque sequi ducimus nam reprehenderit architecto tempore id laboriosam quia error rem ipsa facilis delectus quam iusto odio perspiciatis, cum.</p>
-			</div>
-		</div>
-		<div class="descripcion col-md-4 col-sm-12 mb-12">
-			<div class="informacion col-lg-12">
-				<img src="img/satelite.png" alt="">
-			</div>
-			<div class="informacionTexto col-lg-12">
-				<h2>Cobertura</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus aliquam, atque sequi ducimus nam reprehenderit architecto tempore id laboriosam quia error rem ipsa facilis delectus quam iusto odio perspiciatis, cum.</p>
-			</div>
-		</div>
-		<hr class="linea">
-		<!-- fin  servicios ======================================================================================= -->
-		<!-- productos ============================================================================================ -->
-		<h3 class="my-4">Costos y Tarifas</h3>
-		<div class="planes row">
-			<div class="indicador md-4 col-sm-4 mb-4">
-				<img src="img/tv_costos.png" alt="">
-			</div>
-			<!-- fin indicador -->
-			<div class="costos col-md-10 col-sm-10 mb-10">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam dolorem expedita natus alias animi veritatis ex dicta optio incidunt non, odio voluptas atque libero, repudiandae at assumenda aut et pariatur!</p>
-			</div>
-			<!-- fin costos -->
-		</div>
-		<!-- fin planes -->
-		<div class="planes row">
-			<div class="indicador col-md-4 col-sm-4 mb-4">
-				<img src="img/wi-fi_costos.png" alt="">
-			</div>
-			<!-- fin indicador -->
-			<div class="<cost></cost>os col-md-10 col-sm-10 mb-10">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam dolorem expedita natus alias animi veritatis ex dicta optio incidunt non, odio voluptas atque libero, repudiandae at assumenda aut et pariatur!</p>
-			</div>
-			<!-- fin costos -->
-		</div>
-		<div class="planes row">
-			<div class="indicador col-md-4 col-sm-4 mb-4">
-				<img src="img/servicos_costos.png" alt="">
-			</div>
-			<!-- fin indicador -->
-			<div class="costos col-md-8 col-sm-8 mb-8">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam dolorem expedita natus alias animi veritatis ex dicta optio incidunt non, odio voluptas atque libero, repudiandae at assumenda aut et pariatur!</p>
-			</div>
-			<!-- fin costos -->
-		</div>
-		<!-- fin productos =========================================================================================== -->
-
-	</div>
-	<!-- fin container -->
-	<!--  fin .contenedor -->
-	<div id="contacto">
-
-
-		<div class="row map">
-			<h1>Contactenos</h1>
-			<hr>
-			<div class="container">
-				<div class="col-md-6">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3736489.7218514383!2d90.21589792292741!3d23.857125486636733!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1506502314230" width="100%" height="330" frameborder="0" style="border:0" allowfullscreen></iframe>
-				</div>
-				<div class="col-md-6">
-					<form id="form_contacto" action="">
-						<input placeholder="Nombre" name="" type="text">
-						<input placeholder="Telefono" name="" type="text">
-						<input placeholder="Correo" name="" type="text">
-						<textarea name="" placeholder="mensaje" id="" cols="10" rows="2"></textarea>
-						<buttom class="btn btn-success">Enviar</buttom>
-					</form>
-				</div>
-			</div>
-			<!-- fin container -->
-		</div>
-
-
-	</div>
-	<!-- fin contenido principal ============================================================ -->
-	<!-- modal  login ************************************************************ -->
-	<!-- Modal -->
-	<div id="modallLogin" class="modal fade" role="dialog">
-		<div class="modal-dialog">
-			<!-- Modal content-->
-			<div class="modal-content">
-
-				<div class="modal-body">
-					<!-- contenido modal **************************************************- -->
-					<div id="datosLogin">
-						<div class="row">
-							<div class="col-lg-12 col-md-12">
-								<div class="logoLogin">
-									<img src="img/logo.png" alt="">
-								</div>
-								<hr>
-								<div id="contenido-login">
-						<!-- form login -->
-
-									<form action="" id="form_login" data-toggle="validator">
-										<!-- formulario ingresar -->
-										<div class="input-group">
-											<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span>
-											</span>
-											<input id="usuario" name="usuario" type="text" class="form-control" placeholder="Usuario" />
-										</div>
-										<br>
-										<div class="input-group">
-											<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-											<input id="password" type="password" class="form-control" placeholder="Contraeña" />
-										</div>
-										<br>
-										<div class="input-group">
-											<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-											<select id="perfil" class="form-control">
-												  <option value="">Perfil</option>
-												  <option value="usuario">usuario</option>
-												  <option value="cliente">cliente</option>
-												</select>
-										</div>
-										<a href="#" id="recuperar-contraseña" style="float: right;font-size: 12px;">Recuperar Contraseña</a>
-										<hr>
-										
-										<a id="ingresar" type='submit' class="brnIngresar btn btn-lg" href="#">Ingresar</a>
-
-									</form>
-									<!-- fin formulario -->
-									<p>No Tienes una cuenta Registrate <a id="ver-registro" href="#">aqui</a></p>
-
-								</div>
-
-								<!-- form registrar ================================================================================ -->
-
-								<div id="contenido-registro" style="display: none;">
-									<form id="form-regidtro" action="">
-										<div class="input-group">
-											<span class="input-group-addon"><span class="glyphicon glyphicon-list-alt"></span>
-											</span>
-											<input id="registro_nombre" name="nombre" type="text" class="form-control" placeholder="Nombre" required />
-										</div>
-										<br>
-										<div class="input-group">
-											<span class="input-group-addon"><span class="glyphicon glyphicon-list-alt"></span>
-											</span>
-											<input id="registro_apellido" name="apellido" type="text" class="form-control" placeholder="Apellido" required />
-										</div>
-										<br>
-										<div class="input-group">
-											<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span>
-											</span>
-											<input id="registro_usuario" name="usuario" type="text" class="form-control" placeholder="Nombre de Usuario" required />
-										</div>
-										<br>
-										<div class="input-group">
-											<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-											<input id="registro_password" name="password" type="password" class="form-control" placeholder="Contraeña" required />
-										</div>
-										<br>
-										<div class="input-group">
-											<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span>
-											</span>
-											<input id="registro_confirmar_contraseña" name="confirmar_contraseña" type="text" class="form-control" placeholder="Confirmar Contrasña" required/>
-										</div>
-										<br>
-										<button id="registrar_usuario" type="button" class="brnIngresar btn btn-lg">Registrar</button>
-
-									</form>
-									<p>Tienes una cuenta ? ingresa a <a id="ver-login" href="#">aqui</a></p>
-								</div>
-								<!-- recuperar contraseña -->
-								<div class="" id="contenido-recuperacion">
-									<form id="form-recuperacion" action="">
-										<p>Por Favor Ingrese su Correo Para Confirmar Su Cuenta</p>
-
-										<div class="input-group">
-											<span class="input-group-addon"><span class="glyphicon glyphicon-list-alt"></span>
-											</span>
-											<input id="recuperar_contraseña" type="text" class="form-control" placeholder="Ingrese su correo" />
-										</div>
-										<br>
-										<button type="button" class="brnIngresar btn btn-lg">Enviar</button>
-									</form>
-									<p>No Tienes una cuenta? Registrate <a id="ver-registro" href="#">aqui</a></p>
-
-								</div>
-
-							</div>
-						</div>
-						<!--  fin row login -->
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="img/antena.jpg">
+					<div class="carousel-caption">
+						<!--  -->
+						<h2 class="my-4 titulo">Red TV
+							<!-- titulo -->
+							<small>Telecomunicaciones</small>
+						</h2>
+						<!-- <h1><img src="img/presentacin.jpg" alt="">Entretenimiento para todos</h1> -->
+						<h1>
+							<i class="centercode"></i>Entretenimiento</h1>
+						<!-- Slogan -->
+						<h1>
+							<i class="centercode"></i>Para todos</h1>
+						<!-- Slogan -->
 					</div>
-					<!-- fin datos login ******************************************* -->
-					<!-- fin contenido modal *********************************************- -->
+				</div>
+
+				<div class="item">
+					<img src="img/control_tv.jpg">
+					<div class="carousel-caption">
+							<!--  -->
+							<h2 class="my-4 titulo">Red TV
+								<!-- titulo -->
+								<small>Telecomunicaciones</small>
+							</h2>
+							<!-- <h1><img src="img/presentacin.jpg" alt="">Entretenimiento para todos</h1> -->
+							<h1>
+								<i class="centercode"></i>Entretenimiento</h1>
+							<!-- Slogan -->
+							<h1>
+								<i class="centercode"></i>Para todos</h1>
+							<!-- Slogan -->
+						</div>
+				</div>
+
+				<div class="item">
+					<img src="img/ingreso.jpg">
+					<div class="carousel-caption">
+							<!--  -->
+							<h2 class="my-4 titulo">Red TV
+								<!-- titulo -->
+								<small>Telecomunicaciones</small>
+							</h2>
+							<!-- <h1><img src="img/presentacin.jpg" alt="">Entretenimiento para todos</h1> -->
+							<h1>
+								<i class="centercode"></i>Entretenimiento</h1>
+							<!-- Slogan -->
+							<h1>
+								<i class="centercode"></i>Para todos</h1>
+							<!-- Slogan -->
+						</div>
+				</div>
+			</div>
+
+			<!-- Left and right controls -->
+			<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+
+
+		<!-- fin contenido -->
+		<div class="container contenido">
+			<!--  servicios ======================================================================================== -->
+
+			<h3 class="my-4">Nuestros Servicios</h3>
+
+			<div class="row">
+
+				<div class="col-sm-4 col-xs-6">
+
+					<div class="panel panel-default">
+						<div class="panel-thumbnail">
+							<img src="img/card_cobertura.jpg" class="img-responsive">
+						</div>
+						<div class="panel-body">
+							<p class="lead">Cobertura</p>
+							<hr>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus aliquam, atque sequi ducimus nam reprehenderit architecto
+								tempore id laboriosam quia error rem ipsa facilis delectus quam iusto odio perspiciatis, cum.</p>
+						</div>
+					</div>
+
+
+				</div>
+				<!--/col-->
+
+				<div class="col-sm-4 col-xs-6">
+
+					<div class="panel panel-default">
+						<div class="panel-thumbnail">
+							<img src="img/card_internet.jpg" class="img-responsive">
+						</div>
+						<div class="panel-body">
+							<p class="lead"> Internet</p>
+							<hr>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus aliquam, atque sequi ducimus nam reprehenderit architecto
+								tempore id laboriosam quia error rem ipsa facilis delectus quam iusto odio perspiciatis, cum.</p>
+						</div>
+					</div>
+
+
+				</div>
+				<!--/col-->
+
+				<div class="col-sm-4 col-xs-6">
+
+					<div class="panel panel-default">
+						<div class="panel-thumbnail">
+							<img src="img/card_televicion.jpg" class="img-responsive">
+						</div>
+						<div class="panel-body">
+							<p class="lead"> Television</p>
+							<hr>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus aliquam, atque sequi ducimus nam reprehenderit architecto
+								tempore id laboriosam quia error rem ipsa facilis delectus quam iusto odio perspiciatis, cum.</p>
+						</div>
+					</div>
+
+
+				</div>
+				<!--/col-->
+
+			</div>
+
+
+			<!-- 1 -->
+			<hr class="linea">
+			<!-- fin  servicios ======================================================================================= -->
+			<!-- productos ============================================================================================ -->
+			<h3 class="my-4">Costos y Tarifas</h3>
+			<div class="planes row">
+				<div class="indicador md-4 col-sm-4 mb-4">
+					<img src="img/tv_costos.png" alt="">
+				</div>
+				<!-- fin indicador -->
+				<div class="costos col-md-10 col-sm-10 mb-10">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam dolorem expedita natus alias animi veritatis ex dicta
+						optio incidunt non, odio voluptas atque libero, repudiandae at assumenda aut et pariatur!</p>
+				</div>
+				<!-- fin costos -->
+			</div>
+			<!-- fin planes -->
+			<div class="planes row">
+				<div class="indicador col-md-4 col-sm-4 mb-4">
+					<img src="img/wi-fi_costos.png" alt="">
+				</div>
+				<!-- fin indicador -->
+				<div class="<cost></cost>os col-md-10 col-sm-10 mb-10">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam dolorem expedita natus alias animi veritatis ex dicta
+						optio incidunt non, odio voluptas atque libero, repudiandae at assumenda aut et pariatur!</p>
+				</div>
+				<!-- fin costos -->
+			</div>
+			<div class="planes row">
+				<div class="indicador col-md-4 col-sm-4 mb-4">
+					<img src="img/servicos_costos.png" alt="">
+				</div>
+				<!-- fin indicador -->
+				<div class="costos col-md-8 col-sm-8 mb-8">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam dolorem expedita natus alias animi veritatis ex dicta
+						optio incidunt non, odio voluptas atque libero, repudiandae at assumenda aut et pariatur!</p>
+				</div>
+				<!-- fin costos -->
+			</div>
+			<!-- fin productos =========================================================================================== -->
+
+		</div>
+		<!-- fin container -->
+		<!--  fin .contenedor -->
+		<div id="contacto">
+
+
+			<div class="row map">
+				<h1>Contactenos</h1>
+				<hr>
+				<div class="container">
+					<div class="col-md-6">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3736489.7218514383!2d90.21589792292741!3d23.857125486636733!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1506502314230"
+						 width="100%" height="330" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+					<div class="col-md-6">
+						<form id="form_contacto" action="">
+							<input placeholder="Nombre" name="" type="text">
+							<input placeholder="Telefono" name="" type="text">
+							<input placeholder="Correo" name="" type="text">
+							<textarea name="" placeholder="mensaje" id="" cols="10" rows="2"></textarea>
+							<buttom class="btn btn-success">Enviar</buttom>
+						</form>
+					</div>
+				</div>
+				<!-- fin container -->
+			</div>
+
+
+		</div>
+		<!-- fin contenido principal ============================================================ -->
+		<!-- modal  login ************************************************************ -->
+		<!-- Modal -->
+		<div id="modallLogin" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content">
+
+					<div class="modal-body">
+						<!-- contenido modal **************************************************- -->
+						<div id="datosLogin">
+							<div class="row">
+								<div class="col-lg-12 col-md-12">
+									<div class="logoLogin">
+										<img src="img/logo.png" alt="">
+									</div>
+									<hr>
+									<div id="contenido-login">
+										<!-- form login -->
+
+										<form action="" id="form_login" data-toggle="validator">
+											<!-- formulario ingresar -->
+											<div class="input-group">
+												<span class="input-group-addon">
+													<span class="glyphicon glyphicon-user"></span>
+												</span>
+												<input id="usuario_login" name="usuario_login" type="text" class="form-control required" placeholder="Usuario" />
+											</div>
+											<br>
+											<div class="input-group">
+												<span class="input-group-addon">
+													<span class="glyphicon glyphicon-lock"></span>
+												</span>
+												<input id="password_login" name="password_login" type="password" class="form-control required" placeholder="Contraeña" />
+											</div>
+											<br>
+											<a href="#" id="recuperar-contraseña" style="float: right;font-size: 12px;">Recuperar Contraseña</a>
+											<hr>
+
+											<button id="login_button" type='submit' class="brnIngresar btn btn-lg" href="#">Ingresar</button>
+
+										</form>
+										<!-- fin formulario -->
+										<p>No Tienes una cuenta Registrate
+											<a id="ver-registro" href="#">aqui</a>
+										</p>
+
+									</div>
+
+									<!-- form registrar ================================================================================ -->
+
+									<div id="contenido-registro" style="display: none;">
+										<form id="form-registro" action="">
+											<div class="input-group">
+												<span class="input-group-addon">
+													<span class="glyphicon glyphicon-list-alt"></span>
+												</span>
+												<input id="nombre" name="nombre" type="text" class="form-control required" placeholder="Nombre" />
+											</div>
+											<br>
+											<div class="input-group">
+												<span class="input-group-addon">
+													<span class="glyphicon glyphicon-list-alt"></span>
+												</span>
+												<input id="apellido" name="apellido" type="text" class="form-control required" placeholder="Apellido" />
+											</div>
+											<br>
+											<div class="input-group">
+												<span class="input-group-addon">
+													<span class="glyphicon glyphicon-user"></span>
+												</span>
+												<input id="usuario" name="usuario" type="text" class="form-control required" placeholder="Nombre de Usuario" />
+											</div>
+											<br>
+											<div class="input-group">
+												<span class="input-group-addon">
+													<span class="glyphicon glyphicon-lock"></span>
+												</span>
+												<input id="password" name="password" type="password" class="form-control required" placeholder="Contraeña" />
+											</div>
+											<br>
+											<div class="input-group">
+												<span class="input-group-addon">
+													<span class="glyphicon glyphicon-lock"></span>
+												</span>
+												<input id="password_confirm" name="password_confirm" type="password" class="form-control required" placeholder="Confirmar Contrasña"
+												 required/>
+											</div>
+											<br>
+											<button id="registrar_usuario" type="submit" class="brnIngresar btn btn-lg">Registrar</button>
+
+										</form>
+										<p>Tienes una cuenta ? ingresa a
+											<a id="ver-login" href="#">aqui</a>
+										</p>
+									</div>
+									<!-- recuperar contraseña -->
+									<div class="" id="contenido-recuperacion">
+										<form id="form-recuperacion" action="">
+											<p>Por Favor Ingrese su Correo Para Confirmar Su Cuenta</p>
+
+											<div class="input-group">
+												<span class="input-group-addon">
+													<span class="glyphicon glyphicon-list-alt"></span>
+												</span>
+												<input id="recuperar_contraseña" type="text" class="form-control" placeholder="Ingrese su correo" />
+											</div>
+											<br>
+											<button type="button" class="brnIngresar btn btn-lg">Enviar</button>
+										</form>
+										<p>No Tienes una cuenta? Registrate
+											<a id="ver-registro" href="#">aqui</a>
+										</p>
+
+									</div>
+
+								</div>
+							</div>
+							<!--  fin row login -->
+						</div>
+						<!-- fin datos login ******************************************* -->
+						<!-- fin contenido modal *********************************************- -->
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<!-- fin modal  login -------------------------------------------------------------------------- -->
+		<!-- fin modal  login -------------------------------------------------------------------------- -->
 
-	<!-- Footer -->
-	<footer class="py-5 bg-dark">
-		<div class="container">
-			<p class="m-0 text-center text-white">Copyright &copy; RedTv S.A</p>
-		</div>
-		<!-- /.container -->
-	</footer>
-	<!--  scripts ****************************************************************************** -->
-	<script src="js/jquery-3.2.1.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.min.js'></script>
-	<script src="https://cdn.rawgit.com/PascaleBeier/bootstrap-validate/v2.1.3/dist/bootstrap-validate.js"></script>
-	<script src="js/jquery.validator.js"></script>
-	<script src="js/jquery.validate.js"></script>
-	<script src="js/index.js"></script>
-	<script src="js/validaciones.js"></script>
+		<!-- Footer -->
+		<footer class="py-5 bg-dark">
+			<div class="container">
+				<p class="m-0 text-center text-white">Copyright &copy; RedTv S.A</p>
+			</div>
+			<!-- /.container -->
+		</footer>
+		<!--  scripts ****************************************************************************** -->
+		<script src="js/jquery-3.2.1.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.validate.js"></script>
+		<script src="js/sweetalert2.all.js"></script>
+		<script src="js/validaciones.js"></script>
+		<script src="js/index.js"></script>
 </body>
 
 </html>

@@ -359,23 +359,43 @@ $.extend( $.validator, {
 		$.extend( $.validator.defaults, settings );
 	},
 
+	// messages: {
+	// 	required: "This field is required.",
+	// 	remote: "Please fix this field.",
+	// 	email: "Please enter a valid email address.",
+	// 	url: "Please enter a valid URL.",
+	// 	date: "Please enter a valid date.",
+	// 	dateISO: "Please enter a valid date (ISO).",
+	// 	number: "Please enter a valid number.",
+	// 	digits: "Please enter only digits.",
+	// 	equalTo: "Please enter the same value again.",
+	// 	maxlength: $.validator.format( "Please enter no more than {0} characters." ),
+	// 	minlength: $.validator.format( "Please enter at least {0} characters." ),
+	// 	rangelength: $.validator.format( "Please enter a value between {0} and {1} characters long." ),
+	// 	range: $.validator.format( "Please enter a value between {0} and {1}." ),
+	// 	max: $.validator.format( "Please enter a value less than or equal to {0}." ),
+	// 	min: $.validator.format( "Please enter a value greater than or equal to {0}." ),
+	// 	step: $.validator.format( "Please enter a multiple of {0}." )
+	// },
+
+	//* español
 	messages: {
-		required: "This field is required.",
-		remote: "Please fix this field.",
-		email: "Please enter a valid email address.",
-		url: "Please enter a valid URL.",
+		required: "Este Campo es Requerido",
+		remote: "Por favor, corriga este campo.",
+		email: "ntroduzca una dirección de correo electrónico válida.",
+		url: "Introduzca una URL válida.",
 		date: "Please enter a valid date.",
-		dateISO: "Please enter a valid date (ISO).",
-		number: "Please enter a valid number.",
-		digits: "Please enter only digits.",
-		equalTo: "Please enter the same value again.",
-		maxlength: $.validator.format( "Please enter no more than {0} characters." ),
-		minlength: $.validator.format( "Please enter at least {0} characters." ),
-		rangelength: $.validator.format( "Please enter a value between {0} and {1} characters long." ),
-		range: $.validator.format( "Please enter a value between {0} and {1}." ),
-		max: $.validator.format( "Please enter a value less than or equal to {0}." ),
-		min: $.validator.format( "Please enter a value greater than or equal to {0}." ),
-		step: $.validator.format( "Please enter a multiple of {0}." )
+		dateISO: "Por favor ingrese una fecha válida.",
+		number: "Por favor ingrese un número válido.",
+		digits: "Por favor, introduzca sólo dígitos.",
+		equalTo: "Por favor ingrese el mismo valor de nuevo.",
+		maxlength: $.validator.format( "Escriba no más de {0} caracteres." ),
+		minlength: $.validator.format( "Introduzca por lo menos {0} caracteres." ),
+		rangelength: $.validator.format( "Introduzca un valor entre {0} y {1} caracteres de largo." ),
+		range: $.validator.format( "Por favor ingrese un valor entre {0} y {1}." ),
+		max: $.validator.format( "Porfavor ingrese un valor menor que o igual a {0}." ),
+		min: $.validator.format( "Porfavor ingrese un valor mayor que o igual a {0}." ),
+		step: $.validator.format( "Introduzca un múltiplo de {0}." )
 	},
 
 	autoCreateRanges: false,

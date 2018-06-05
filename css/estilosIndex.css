@@ -122,7 +122,7 @@ body {
 /* imagen de presentacion -------------------*/
 
 #presentacion {
-	padding-top: 69px;
+
 	height: 600px;
 	background: url('../img/antena.jpg') fixed center no-repeat;
 	background-size: 100% 700px;
@@ -137,6 +137,14 @@ body {
 	color: white;
 	font: oblique bold 320% cursive;
 
+}
+ .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    display: block;
+	max-width: 100%;
+	height: 100%;
+	width: 100%;
+	min-height: 600px;
+    /* height: auto; */
 }
 
 @media (max-width:800px) {
@@ -167,7 +175,7 @@ footer {
 	border: solid 1px white;
 }
 
-.logoLogin {
+.logoLogin img{
 	margin-left: 40%;
 	margin-right: 40%;
 	width: 20%;
@@ -175,7 +183,7 @@ footer {
 	margin-bottom: 10px;
 }
 @media (max-width:751px){
-	.logoLogin {
+	.logoLogin img{
 	margin-left: 40%;
 	margin-right: 40%;
 	width: 20%;
@@ -223,39 +231,12 @@ footer {
 }
 
 /* estilos informacion ======================================== */
-
+.panel-thumbnail img{
+	height: 200px;
+	width: 100%;
+}
 .linea {
 	border: solid 4px white;
-}
-
-.informacion {
-	height: 0px;
-
-}
-
-.informacion img {
-	height: 70px;
-	width: 70px;
-}
-
-.informacionTexto {
-	padding: 7px;
-	z-index: 1;
-	
-}
-
-.informacionTexto p {
-	padding: 12px;
-	font-size: 19;
-	width: auto;
-	text-align: justify;
-}
-
-.informacionTexto h2 {
-	margin-left: 30%;
-	border-bottom: solid 2px red;
-	padding: 1px;
-
 }
 
 /* fin estilos informacion ===================================== */
@@ -406,7 +387,7 @@ header img{
 	width: 50px;
 }
 /* texto validaciones*/
-.invalid-feedback{
+.error{
 	color:red;
 	height: 100%;
 	width: 100%;

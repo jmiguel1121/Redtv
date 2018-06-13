@@ -323,7 +323,7 @@ footer {
 #form_contacto input {
 	padding: 10px;
 	width: 100%;
-	margin: 10px;
+
 	height: 40px;
 	font-size: 16px;
 	border-radius: 5px;
@@ -334,36 +334,6 @@ footer {
 
 	
 }
-
-#form_contacto textarea {
-	padding: 10px;
-	width: 100%;
-	margin: 10px;
-	font-size: 16px;
-		border-radius: 5px;
-	border: none;
-	border-bottom: solid 3px orange;
-	color: white;
-	font: monospace 150%;
-}
-
-#form_contacto buttom {
-	width: 100%;
-	color: white;
-	background: #149400;
-	font-size: 18px;
-		margin: 10px;
-
-		
-}
-#form_contacto buttom:hover {
-	background: #047522;
-}
-
-#form_contacto ::placeholder {
-	color: #a09ea1;
-}
-
 :-ms-input-placeholder {
 	/* Internet Explorer 10-11 */
 		color: #a09ea1;
@@ -389,7 +359,6 @@ header img{
 /* texto validaciones*/
 .error{
 	color:red;
-	height: 100%;
 	width: 100%;
 	font-family: "calibri", Garamond, 'Comic Sans';
 

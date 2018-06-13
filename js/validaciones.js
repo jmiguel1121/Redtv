@@ -1,6 +1,6 @@
 
 /* validacio y regsitro usuario*/
-var form_registro = $("#form-registro")
+var form_registro = $("#form-registro");
 
 form_registro.validate({
     rules: {
@@ -37,12 +37,11 @@ form_registro.validate({
             equalTo: "Las contraseñas no coinciden",
         }
     }
-
 });
 
 /* validacio login *************************/
 
-var form_login = $("#form_login")
+var form_login = $("#form_login");
 
 form_login.validate({
     rules: {
@@ -55,6 +54,49 @@ form_login.validate({
             required: true,
             maxlength: 20,
             minlength: 4
+        },
+    }
+});
+/**validacion recuperar contraseña */
+ var form_recuperacion=$("#form_recuperacion");
+
+form_recuperacion.validate({
+    rules: {
+        recuperar_contraseña: {
+            required: true,
+            maxlength: 20,
+            minlength: 4,
+            email: true,
+        },
+    }
+});
+/** vlaidaciones contactenos */
+var form_contactenos = $("#form_contactenos");
+
+console.log(form_contactenos);
+
+form_contactenos.validate({
+    rules: {
+        nombre_contacto: {
+            required: true,
+            maxlength: 20,
+            minlength: 4,
+        },
+        telefono_contacto: {
+            required: true,
+            maxlength: 20,
+            minlength: 4,
+        },
+        correo_contacto: {
+            required: true,
+            maxlength: 20,
+            minlength: 4,
+            email: true,
+        },
+        mensaje_contacto: {
+            required: true,
+            maxlength: 20,
+            minlength: 4,
         },
     }
 
@@ -127,7 +169,7 @@ var tipo = "Usuario";
 $(form).submit(function (e) {
     e.preventDefault();
     crear(form, input, tipo);
-    console.log(usuarios);
+
 });
 /**Validacion ingreso suario login ======================================= */
 $("#form_login").submit(function (e) {

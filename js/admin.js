@@ -72,6 +72,12 @@ $('body').on('click ','#registrar_material',function () {
 	
 });
 
+$('body').on('click','#control_usuarios',function () {
+	$("#datos-contenido").load('usuarios/lista_usuarios.html');
+	
+});
+
+
 
 
 

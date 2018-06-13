@@ -134,8 +134,6 @@
    	font-size: 16px;
    }
 
-   @media (min-width: 768px) {}
-
    /* contenido=============================================================================================*/
 
    #informaion-modulo h1 {
@@ -531,7 +529,7 @@
    	.navbar-inverse {
    		position: fixed;
    	}
-
+	
 
    }
 
@@ -539,12 +537,15 @@
 
    @media (max-width: 758px) {
    	.navbar-header img {
-
    		max-width: 80px;
-
-   	}
-
+	   }
    }
+   @media (min-width: 768px) and (max-width:1330px) {
+	
+		#contenido-modulo{
+		margin-left: 40px;
+		}
+ 	}
 
    /* footer ===============================================================-*/
 

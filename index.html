@@ -159,9 +159,7 @@
 
 				</div>
 				<!--/col-->
-
 				<div class="col-sm-4 col-xs-6">
-
 					<div class="panel panel-default">
 						<div class="panel-thumbnail">
 							<img src="img/card_internet.jpg" class="img-responsive">
@@ -173,8 +171,6 @@
 								tempore id laboriosam quia error rem ipsa facilis delectus quam iusto odio perspiciatis, cum.</p>
 						</div>
 					</div>
-
-
 				</div>
 				<!--/col-->
 
@@ -250,19 +246,31 @@
 				<h1>Contactenos</h1>
 				<hr>
 				<div class="container">
-					<div class="col-md-6">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3736489.7218514383!2d90.21589792292741!3d23.857125486636733!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1506502314230"
-						 width="100%" height="330" frameborder="0" style="border:0" allowfullscreen></iframe>
-					</div>
-					<div class="col-md-6">
-						<form id="form_contacto" action="">
-							<input placeholder="Nombre" name="" type="text">
-							<input placeholder="Telefono" name="" type="text">
-							<input placeholder="Correo" name="" type="text">
-							<textarea name="" placeholder="mensaje" id="" cols="10" rows="2"></textarea>
-							<buttom class="btn btn-success">Enviar</buttom>
-						</form>
-					</div>
+						<div class="row">
+								<div class="col-md-6">
+										<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3736489.7218514383!2d90.21589792292741!3d23.857125486636733!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1506502314230"
+										 width="100%" height="330" frameborder="0" style="border:0" allowfullscreen></iframe>
+									</div>
+								<div class="col-md-5">
+								  <form id="form_contactenos">
+									<div class="form-group">
+									  <input type="text" class="form-control" name="nombre_contacto" value="" placeholder="Nombre y apellido">
+									</div>
+									<div class="form-group">
+									  <input type="email" class="form-control" name="correo_contacto" value="" placeholder="E-mail">
+									</div>
+									<div class="form-group">
+									  <input type="tel" class="form-control" name="telefono_contacto" value="" placeholder="Telefono">
+									</div>
+									<div class="form-group">
+									  <textarea class="form-control required" name="mensaje_contacto" rows="3" placeholder="Mensaje"></textarea>
+									</div>
+									<button class="btn btn-success btn-block" type="submit" name="button">
+										<i class="fa fa-paper-plane-o" aria-hidden="true"></i> Enviar
+									</button>
+								  </form>
+								</div>
+							  </div>
 				</div>
 				<!-- fin container -->
 			</div>
@@ -289,7 +297,7 @@
 									<div id="contenido-login">
 										<!-- form login -->
 
-										<form action="" id="form_login" data-toggle="validator">
+										<form action="" id="form_login">
 											<!-- formulario ingresar -->
 											<div class="input-group">
 												<span class="input-group-addon">
@@ -367,17 +375,16 @@
 									</div>
 									<!-- recuperar contraseña -->
 									<div class="" id="contenido-recuperacion">
-										<form id="form-recuperacion" action="">
+										<form id="form_recuperacion" action="">
 											<p>Por Favor Ingrese su Correo Para Confirmar Su Cuenta</p>
-
 											<div class="input-group">
 												<span class="input-group-addon">
 													<span class="glyphicon glyphicon-list-alt"></span>
 												</span>
-												<input id="recuperar_contraseña" type="text" class="form-control" placeholder="Ingrese su correo" />
+												<input id="recuperar_contraseña" name="recuperar_contraseña" type="text" class="form-control required" placeholder="Ingrese su correo" />
 											</div>
 											<br>
-											<button type="button" class="brnIngresar btn btn-lg">Enviar</button>
+											<button type="submit" class="brnIngresar btn btn-lg">Enviar</button>
 										</form>
 										<p>No Tienes una cuenta? Registrate
 											<a id="ver-registro" href="#">aqui</a>

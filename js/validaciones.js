@@ -58,7 +58,7 @@ form_login.validate({
     }
 });
 /**validacion recuperar contraseña */
- var form_recuperacion=$("#form_recuperacion");
+var form_recuperacion = $("#form_recuperacion");
 
 form_recuperacion.validate({
     rules: {
@@ -72,8 +72,6 @@ form_recuperacion.validate({
 });
 /** vlaidaciones contactenos */
 var form_contactenos = $("#form_contactenos");
-
-console.log(form_contactenos);
 
 form_contactenos.validate({
     rules: {
@@ -112,14 +110,14 @@ admin["id_usuario"] = 1;
 admin["perfil"] = "usuario";
 admin["nombre"] = "miguel";
 admin["apellido"] = "lagos";
-admin["usuario"] = "jmiguel1121";
+admin["usuario"] = "admin";
 admin["password"] = "12345";
 /**se cfrea por defecto el cliente prueba */
 datos["id_usuario"] = 2;
-datos["perfil"] = "datos";
+datos["perfil"] = "cliente";
 datos["nombre"] = "datos";
 datos["apellido"] = "prueba";
-datos["usuario"] = "cprueba";
+datos["usuario"] = "cliente";
 datos["password"] = "12345";
 
 usuarios.push(admin);
@@ -178,26 +176,31 @@ $("#form_login").submit(function (e) {
     if ($("#form_login").valid()) {
         for (let i = 0; i < usuarios.length; i++) {
             let objeto = usuarios[i];
-            if ($("#usuario_login").val() == objeto.usuario && $("#password_login").val() == objeto.password) {
+
+            if ($("#usuario_login").val() == objeto.usuario
+                && $("#password_login").val() == objeto.password) {
                 /* alerta ingreso correcto */
                 swal({
                     position: 'top-end',
                     type: 'success',
                     title: 'Bienvenido ' + objeto.nombre,
                     timer: 1500
-                })
+                });
                 if (objeto.perfil == "cliente") {
-                    location.href = "vistas/cliente/cliente_inicio.html";
+                    location.href = "vistas/Cliente/cliente_inicio.html";
+                    break;
 
-                } else if (objeto.perfil == "usuario") {
+                }
+                if (objeto.perfil == "usuario") {
                     location.href = "vistas/inicio.html";
+                    break;
                 }
             } else {
                 swal({
                     type: 'error',
                     title: 'Usuario o Contraseña incorrectas',
                     timer: 2500
-                })
+                });
             }
         }
 

@@ -1,10 +1,5 @@
 
 /* cargar modal ============================================*/
-$(Document).ready(function () {
-	$("#vista-modal").load("vistas/modal.html");
-});
-
-
 /* efecto scroll menu =========================================*/
 $(window).scroll(function () {
 	if ($("#menu").offset().top < 505) {

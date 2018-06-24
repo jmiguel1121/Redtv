@@ -19,123 +19,134 @@
 </head>
 
 <body>
-	<!-- menu============================================================================================== -->
-	<div id="menu">
-		<nav class="navbar navbar-inverse sidebar" role="navigation">
-			<div class="container-fluid">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-sidebar-navbar-collapse-1">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-					<img src="../../img/logo.png" alt="">
-					<h1 style="font: oblique bold 120% cursive;">ServiRTV</h1>
-				</div>
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
-					<ul class="nav navbar-nav">
-						<li><a href="../inicio.html">Inicio<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
-
-						<!-- control de agendamiento -->
-						<li><a href="#">Servicios Agendados<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
-						<li><a href="#">historial de Agendamientos<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
-						<li><a href="#">Registrar Material<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
-
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Registrar Material <span class="caret"></span><span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-cog"></span></a>
-							<ul class="dropdown-menu forAnimate" role="menu">
-								<li><a href="#">Material</a></li>
-								<li><a href="#">REgistrar Material Instalado</a></li>
-							</ul>
-						</li>
-						<!--  -->
-					</ul>
-				</div>
+	<!-- header ********************************************** -->
+	<!-- menu==================================================================================== -->
+	<div class="l-sidebar">
+		<div class="logo" style="background: white">
+			<div class="logo__txt">
+				<img src="../img/logo.png" class="img-responsive img-circle" alt="">
 			</div>
-		</nav>
+		</div>
+		<div class="l-sidebar__content">
+			<nav class="c-menu js-menu">
+				<ul class="u-list">
+					<li class="c-menu__item is-active" data-toggle="tooltip" title="CARTERA">
+						<a href="../vistas/cartera/cartera.html">
+							<div class="c-menu__item__inner">
+								<i class="fa fa-file-text-o icono"></i>
+								<div class="c-menu-item__title">
+									<span>CARTERA</span>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="c-menu__item has-submenu" data-toggle="tooltip" title="SERIVICIOS">
+						<a href="../vistas/control_servicos/control_servicios.html">
+							<div class="c-menu__item__inner">
+								<i class="fa fa-id-card-o icono"></i>
+								<div class="c-menu-item__title">
+									<span>SERIVICIOS</span>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="c-menu__item has-submenu" data-toggle="tooltip" title="AGENDAMIENTOS">
+						<a href="../vistas/control_agendamiento/control_agendamiento.html">
+							<div class="c-menu__item__inner">
+								<i class="fa fa-calendar icono"></i>
+								<div class="c-menu-item__title">
+									<span>AGENDAMIENTOS</span>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="c-menu__item has-submenu" data-toggle="tooltip" title="USUARIOS">
+						<a href="../vistas/control_servicos/control_servicios.html">
+							<div class="c-menu__item__inner">
+								<i class="fa fa-address-book-o icono"></i>
+								<div class="c-menu-item__title">
+									<span>USUARIOS</span>
+								</div>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
 	</div>
-	<!-- fin amenu ====================================================================================== -->
+</body>
 
-	<div id="contenido-modulo">
-		<div id="cabecera">
-			<ul id="opcion-susario" class="nav navbar-right">
-				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
-				<img src="../../img/user_admin.png" alt=""> usuario<b class="caret"></b></a>
-					<ul class="dropdown-menu">
-						<li><a href="#"><span class="glyphicon glyphicon-cog"></span>Cambiar Cotraseña</a></li>
-						<li><a href="../../error/404.html"><span class="glyphicon glyphicon-cog"></span>Error 404</a></li>
-						<li><a href="../../error/500.html"><span class="glyphicon glyphicon-cog"></span>Error 500</a></li>
-						<li><a href="../../index.html"><span class="glyphicon glyphicon-off"></span>salir</a></li>
-					</ul>
-				</li>
-			</ul>
-		</div>
-		<!-- informacion modulo -->
-		<div id="informaion-modulo">
-			<h1>CONTROL DE SERIVICIOS</h1>
-			<a href="../inicio.html">Inicio</a><p>/Generar Suscripcion</p>
-		</div>
-		<!--  datos  -->
-		<div id="datos-contenido">
-			<div class="tablas">
-				<legend>Programar Actividad</legend>
-				<fieldset>
-					<div id='wrap'>
-						<div id='calendar'></div>
-						<div style='clear:both'></div>
-					</div>
-					<hr class="linea-tablas">
-				</fieldset>
-				<div class="col-sm-11">
-					<br>
-					<div class="form-group">
-						<a href="#" data-target="#modalConfirmProgra" data-toggle="modal" class="btn btn-success">Finalizar</a>
+<!-- ******************************************************************* -->
+<!-- fin amenu ====================================================================================== -->
 
-					</div>
+<div id="contenido-modulo">
+
+	<!-- informacion modulo -->
+	<div id="informaion-modulo">
+		<h1>CONTROL DE SERIVICIOS</h1>
+		<a href="../inicio.html">Inicio</a>
+		<p>/Generar Suscripcion</p>
+	</div>
+	<!--  datos  -->
+	<div id="datos-contenido">
+		<div class="tablas">
+			<legend>Programar Actividad</legend>
+			<fieldset>
+				<div id='wrap'>
+					<div id='calendar'></div>
+					<div style='clear:both'></div>
+				</div>
+				<hr class="linea-tablas">
+			</fieldset>
+			<div class="col-sm-11">
+				<br>
+				<div class="form-group">
+					<a href="#" data-target="#modalConfirmProgra" data-toggle="modal" class="btn btn-success">Finalizar</a>
 
 				</div>
-				<!-- modal -->
-				<div id="modalConfirmProgra" class="modal fade">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<legend>Alerta</legend>
 
-							</div>
-							<div class="modal-body">
-								<p> Desea Finalizar y Programar La actividad en la Fecha Seleccionada</p>
-							</div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-								<button type="button" class="btn btn-success">Programar</button>
-							</div>
+			</div>
+			<!-- modal -->
+			<div id="modalConfirmProgra" class="modal fade">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<legend>Alerta</legend>
+
+						</div>
+						<div class="modal-body">
+							<p> Desea Finalizar y Programar La actividad en la Fecha Seleccionada</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+							<button type="button" class="btn btn-success">Programar</button>
 						</div>
 					</div>
 				</div>
-				<!-- din modal -->
 			</div>
-
-			<!-- fin datos- contenido -->
+			<!-- din modal -->
 		</div>
-		<footer class="py-5 bg-dark">
-			<div class="container">
-				<p class="m-0 text-center text-white">Copyright &copy; RedTv S.A</p>
-			</div>
-			<!-- /.container -->
-		</footer>sss
-		<!-- scripts -->
-		<script src="../../js/jquery-3.2.1.js"></script>
-		<script src="../../js/bootstrap.min.js"></script>
-		<!-- calendar -->
-		<script src="../../js/calendar/jquery-ui.custom.min.js"></script>
-		<script src="../../js/calendar/fullcalendar.js"></script>
-		<script src="../../js/calendar/calendario.js"></script>
-		<!-- admin -->
-		<script src="../../js/admin.js"></script>
 
-</body>
+		<!-- fin datos- contenido -->
+	</div>
+	<footer class="py-5 bg-dark">
+		<div class="container">
+			<p class="m-0 text-center text-white">Copyright &copy; RedTv S.A</p>
+		</div>
+		<!-- /.container -->
+	</footer>sss
+	<!-- scripts -->
+	<script src="../../js/jquery-3.2.1.js"></script>
+	<script src="../../js/bootstrap.min.js"></script>
+	<!-- calendar -->
+	<script src="../../js/calendar/jquery-ui.custom.min.js"></script>
+	<script src="../../js/calendar/fullcalendar.js"></script>
+	<script src="../../js/calendar/calendario.js"></script>
+	<script src="../../js/font-awesome.js"></script>
+
+	<!-- admin -->
+	<script src="../../js/admin.js"></script>
+
+	</body>
 
 </html>

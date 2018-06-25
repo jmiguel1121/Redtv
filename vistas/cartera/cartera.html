@@ -38,7 +38,7 @@
 				</a>
 				<ul class="dropdown-menu">
 					<li>
-						<a href="#"><span class="glyphicon glyphicon-cog"></span>Cambiar Cotraseña</a>
+						<a href="../inicio.html"><span class="glyphicon glyphicon-cog"></span>Menu incial</a>
 					</li>
 					<li>
 						<a href="../../error/404.html"><span class="glyphicon glyphicon-cog"></span>Error 404</a>
@@ -68,7 +68,7 @@
 			<nav class="c-menu js-menu">
 				<ul class="u-list">
 						<li class="c-menu__item is-active" data-toggle="tooltip" title="INICIO">
-								<a id="inicio" href="../inicio.html">
+								<a id="inicio" href="../cartera/cartera.html">
 									<div class="c-menu__item__inner">
 											<i class="fa fa fa-home icono"></i>
 											<div class="c-menu-item__title">
@@ -77,7 +77,7 @@
 										</div>
 								</a>
 						</li>
-					<li class="c-menu__item is-active" data-toggle="tooltip" title="CONSULTAR FACTURA">
+					<li class="c-menu__item has-submenu" data-toggle="tooltip" title="CONSULTAR FACTURA">
 							<a id="consultar_factura" href="#">
 								<div class="c-menu__item__inner">
 										<i class="fa fa-file-text-o icono"></i>
@@ -127,26 +127,25 @@
 <!-- fin amenu ====================================================================================== -->
 
 	<div id="contenido-modulo">
-		
 		<!-- informacion modulo -->
 		<div id="informaion-modulo">
-
 			<h1>Cartera</h1>
-			<p>Inicio/Generar Suscripcion</p>
 		</div>
 		<!--  datos  -->
 		<div id="datos-contenido">
 			<div class="tablas">
 				<legend>Inicio</legend>
+				<div class="row">
 
-				<div class="col-sm-5">
-					<img style="width: 400px" src="../../img/logo.png" alt="">
-				</div>
-				<div class="col-sm-6">
-					<h1 class="titulo-datos">Bienvenido al Modulo de control de cartera Por favor seleccione la opcion que desea</h1>
-
-				</div>
-				<hr class="linea-tablas">
+						<div class="col-md-12" >
+						  <div class="panel panel-default">
+							   <div class="panel-heading"><center>Facturas</center></div>
+							   <div class="panel-body">
+								 <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+							   </div>
+							 </div>                        
+					   </div>                     
+				   </div>
 			</div>
 			<!-- fin datos-contenido -->
 
@@ -168,7 +167,8 @@
 	<script src="../../js/calendar/fullcalendar.js"></script>
 	<script src="../../js/calendar/calendario.js"></script>
 	<script src="../../js/font-awesome.js"></script>
-
+	<script src="../../js/canvas/canvasjs.min.js"></script>
+	<script src="../../js/canvas/Cartera.js"></script>
 
 	<!-- admin js -->
 	<script src="../../js/admin.js"></script>

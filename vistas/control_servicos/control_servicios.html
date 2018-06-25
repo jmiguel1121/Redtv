@@ -39,8 +39,8 @@
 					</a>
 					<ul class="dropdown-menu">
 						<li>
-							<a href="#">
-								<span class="glyphicon glyphicon-cog"></span>Cambiar Cotraseña</a>
+							<a href="../inicio.html">
+								<span class="glyphicon glyphicon-cog"></span>Menu incial</a>
 						</li>
 						<li>
 							<a href="../error/404.html">
@@ -72,16 +72,16 @@
 		<div class="l-sidebar__content">
 			<nav class="c-menu js-menu">
 				<ul class="u-list">
-						<li class="c-menu__item is-active" data-toggle="tooltip" title="INICIO">
-								<a id="inicio" href="../inicio.html">
-									<div class="c-menu__item__inner">
-											<i class="fa fa fa-home icono"></i>
-											<div class="c-menu-item__title">
-												<span>inicio</span>
-											</div>
-										</div>
-								</a>
-						</li>
+					<li class="c-menu__item is-active" data-toggle="tooltip" title="INICIO">
+						<a id="inicio" href="control_servicios.html">
+							<div class="c-menu__item__inner">
+								<i class="fa fa fa-home icono"></i>
+								<div class="c-menu-item__title">
+									<span>inicio</span>
+								</div>
+							</div>
+						</a>
+					</li>
 					<li class="c-menu__item has-submenu" data-toggle="tooltip" title="GENEAR ACTIVODAD">
 						<a id="generar_servicio" href="#">
 							<div class="c-menu__item__inner">
@@ -92,7 +92,7 @@
 							</div>
 						</a>
 					</li>
-					
+
 					<li class="c-menu__item has-submenu" data-toggle="tooltip" title="GENEAR SUSCRIPCION">
 						<a id="generar_suscripcion" href="#">
 							<div class="c-menu__item__inner">
@@ -137,21 +137,23 @@
 	<!-- informacion modulo -->
 	<div id="informaion-modulo">
 		<h1>CONTROL DE SERIVICIOS</h1>
-		<p>Inicio/Generar Suscripcion</p>
 	</div>
 	<!--  datos  -->
 	<div id="datos-contenido">
 		<div class="tablas">
 			<legend>Inicio</legend>
-
-			<div class="col-sm-5">
-				<img style="width: 400px" src="../../img/logo.png" alt="">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<center>Actividades</center>
+						</div>
+						<div class="panel-body">
+							<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="col-sm-6">
-				<h1 class="titulo-datos">Bienvenido al Modulo de Control de Servicios Por favor seleccione la opcion que desea</h1>
-
-			</div>
-			<hr class="linea-tablas">
 		</div>
 		<!-- fin datos-contenido -->
 	</div>
@@ -172,7 +174,8 @@
 <script src="../../js/calendar/calendario.js"></script>
 <script src="../../js/jquery.dataTables.js"></script>
 <script src="../../js/font-awesome.js"></script>
-
+<script src="../../js/canvas/canvasjs.min.js"></script>
+<script src="../../js/canvas/Servicios.js"></script>
 <!-- admin -->
 <script src="../../js/adminTablas.datatables.js"></script>
 <script src="../../js/admin.js"></script>

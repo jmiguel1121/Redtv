@@ -19,66 +19,105 @@
 </head>
 
 <body>
+		<!-- header ******************************************************************************* -->
+		<header class="l-header">
+				<div class="l-header__inner clearfix">
+					<div class="c-header-icon js-hamburger">
+						<div class="hamburger-toggle">
+							<span class="bar-top"></span>
+							<span class="bar-mid"></span>
+							<span class="bar-bot"></span>
+						</div>
+					</div>
+		
+					<!-- menu suaer -->
+					<ul id="opcion-usuario" class="nav navbar-right">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<img src="../../img/user_admin.png" alt=""> usuario
+								<b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+										<a href="../inicio.html"><span class="glyphicon glyphicon-cog"></span>Menu incial</a>
+								</li>
+								<li>
+									<a href="../error/404.html">
+										<span class="glyphicon glyphicon-cog"></span>Error 404</a>
+								</li>
+								<li>
+									<a href="../error/500.html">
+										<span class="glyphicon glyphicon-cog"></span>Error 500</a>
+								</li>
+								<li>
+									<a href="/index.html">
+										<span class="glyphicon glyphicon-off"></span>salir</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<!--  -->
+		
+				</div>
+			</header>
+			<!-- header ********************************************** -->
 	<!-- header ********************************************** -->
 	<!-- menu==================================================================================== -->
 	<div class="l-sidebar">
-		<div class="logo" style="background: white">
-			<div class="logo__txt">
-				<img src="../img/logo.png" class="img-responsive img-circle" alt="">
+			<div class="logo" style="background: white">
+				<div class="logo__txt">
+					<img src="../../img/logo.png" class="img-responsive img-circle" alt="">
+				</div>
+			</div>
+			<div class="l-sidebar__content">
+				<nav class="c-menu js-menu">
+					<ul class="u-list">
+							<li class="c-menu__item is-active" data-toggle="tooltip" title="INICIO">
+									<a id="inicio" href="control_agendamiento.html">
+										<div class="c-menu__item__inner">
+												<i class="fa fa fa-home icono"></i>
+												<div class="c-menu-item__title">
+													<span>inicio</span>
+												</div>
+											</div>
+									</a>
+							</li>
+						<li class="c-menu__item has-submenu" data-toggle="tooltip" title="HISTORIAL AGENDAMIENTOS">
+							<a id="historial_agendamientos" href="#">
+								<div class="c-menu__item__inner">
+									<i class="fa fa-id-card-o icono"></i>
+									<div class="c-menu-item__title">
+										<span>Historial Agendamientos</span>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="c-menu__item has-submenu" data-toggle="tooltip" title="REGISTRAR MATERIAL">
+							<a id="registrar_material" href="#">
+								<div class="c-menu__item__inner">
+									<i class="fa fa-calendar icono"></i>
+									<div class="c-menu-item__title">
+										<span>Registrar Material</span>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="c-menu__item has-submenu" data-toggle="tooltip" title="SERVICIOS AGENDADOS">
+							<a id="servicios_agendados" href="#">
+								<div class="c-menu__item__inner">
+									<i class="fa fa-address-book-o icono"></i>
+									<div class="c-menu-item__title">
+										<span>Servicios Agendados</span>
+									</div>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</nav>
 			</div>
 		</div>
-		<div class="l-sidebar__content">
-			<nav class="c-menu js-menu">
-				<ul class="u-list">
-					<li class="c-menu__item is-active" data-toggle="tooltip" title="CARTERA">
-						<a href="../vistas/cartera/cartera.html">
-							<div class="c-menu__item__inner">
-								<i class="fa fa-file-text-o icono"></i>
-								<div class="c-menu-item__title">
-									<span>CARTERA</span>
-								</div>
-							</div>
-						</a>
-					</li>
-					<li class="c-menu__item has-submenu" data-toggle="tooltip" title="SERIVICIOS">
-						<a href="../vistas/control_servicos/control_servicios.html">
-							<div class="c-menu__item__inner">
-								<i class="fa fa-id-card-o icono"></i>
-								<div class="c-menu-item__title">
-									<span>SERIVICIOS</span>
-								</div>
-							</div>
-						</a>
-					</li>
-					<li class="c-menu__item has-submenu" data-toggle="tooltip" title="AGENDAMIENTOS">
-						<a href="../vistas/control_agendamiento/control_agendamiento.html">
-							<div class="c-menu__item__inner">
-								<i class="fa fa-calendar icono"></i>
-								<div class="c-menu-item__title">
-									<span>AGENDAMIENTOS</span>
-								</div>
-							</div>
-						</a>
-					</li>
-					<li class="c-menu__item has-submenu" data-toggle="tooltip" title="USUARIOS">
-						<a href="../vistas/control_servicos/control_servicios.html">
-							<div class="c-menu__item__inner">
-								<i class="fa fa-address-book-o icono"></i>
-								<div class="c-menu-item__title">
-									<span>USUARIOS</span>
-								</div>
-							</div>
-						</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
-	</div>
-</body>
-
-<!-- ******************************************************************* -->
-<!-- fin amenu ====================================================================================== -->
-
+	</body>
+<!-- fin menu **************************************************** -->
 <div id="contenido-modulo">
 
 	<!-- informacion modulo -->
@@ -143,7 +182,8 @@
 	<script src="../../js/calendar/fullcalendar.js"></script>
 	<script src="../../js/calendar/calendario.js"></script>
 	<script src="../../js/font-awesome.js"></script>
-
+	<script src="../../js/canvasjs.min.js"></script>
+	<script src="../../js/Inicio.js"></script>
 	<!-- admin -->
 	<script src="../../js/admin.js"></script>
 

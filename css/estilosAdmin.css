@@ -520,13 +520,14 @@ a.list-group-item.active small {
    #opcion-usuario .dropdown-menu li a {
    	color: black;
    	width: 90%;
-   	margin: 3px;
+     margin: 3px;
+     padding: 4px;
 
    }
 
    #opcion-usuario .dropdown-menu li a:hover {
    	color: white;
-   	background: black;
+   	background: rgb(39, 74, 111);
    	width: 90%;
    	border-radius: 0px;
 
@@ -669,7 +670,8 @@ a.list-group-item.active small {
    .form-control {
    	border: 2px solid #168072;
    	display: block;
-   	width: 100%;
+     width: 100%;
+     background: #f4f4f4;
    }
 
    .btn-success {
@@ -698,7 +700,8 @@ a.list-group-item.active small {
    	margin-bottom: 10px;
    	border-radius: 0px 8px 8px 0px;
    	text-align: center !important;
-   	padding: 5px;
+     padding: 5px;
+     background: whitesmoke;
    }
 
    .titulo-datos {
@@ -833,6 +836,11 @@ a.list-group-item.active small {
       overflow-x: scroll;
       }
    }
+   @media (max-width: 768px){
+    .img-responsive{
+      width: 170px;
+    }
+  }
 
    /* footer ===============================================================-*/
 

@@ -98,7 +98,7 @@
 						</a>
 					</li>
 					<li class="c-menu__item has-submenu" data-toggle="tooltip" title="USUARIOS">
-						<a href="../vistas/control_servicos/control_servicios.html">
+						<a id="control_usuarios" href="#">
 							<div class="c-menu__item__inner">
 								<i class="fa fa-address-book-o icono"></i>
 								<div class="c-menu-item__title">
@@ -117,17 +117,55 @@
 <!-- fin amenu ====================================================================================== -->
 
 <div id="contenido-modulo">
-	
+
 	<!-- informacion modulo -->
 	<div id="informaion-modulo">
 		<h1>INICIO</h1>
-		<p>Inicio/Generar Suscripcion</p>
 	</div>
 	<!--  datos  -->
 	<div id="datos-contenido">
 		<!-- formularios -->
 		<div id="tablas">
-			<img src="../img/antena.jpg" alt="">
+			<div class="row">
+
+				<div class="col-md-6">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<center>Agendamientos Para Hoy</center>
+						</div>
+						<div class="panel-body">
+							<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-md-6">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<center>Servicios Activos Por Sucursal</center>
+						</div>
+						<div class="panel-body">
+							<div id="chartContainer2" style="height: 300px; width: 100%;"></div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="row">
+
+				<div class="col-md-12">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<center>Facturación</center>
+						</div>
+						<div class="panel-body">
+							<div id="chartContainer3" style="height: 300px; width: 100%;"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
 		<!-- otros datos datos -->
 
@@ -148,6 +186,9 @@
 <script src="../js/jquery.dataTables.js"></script>
 <script src="../js/adminTablas.datatables.js"></script>
 <script src="../js/font-awesome.js"></script>
+<script src="../js/canvas/canvasjs.min.js"></script>
+<script src="../js/canvas/Inicio.js"></script>
+
 <script src="../js/admin.js"></script>
 
 

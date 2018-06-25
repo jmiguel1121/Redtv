@@ -34,24 +34,24 @@
 			<ul id="opcion-usuario" class="nav navbar-right">
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-						<img src="../img/user_admin.png" alt=""> usuario
+						<img src="../../img/user_admin.png" alt=""> usuario
 						<b class="caret"></b>
 					</a>
 					<ul class="dropdown-menu">
 						<li>
-							<a href="#">
-								<span class="glyphicon glyphicon-cog"></span>Cambiar Cotraseña</a>
+							<a href="../inicio.html">
+								<span class="glyphicon glyphicon-cog"></span>Menu incial</a>
 						</li>
 						<li>
-							<a href="../error/404.html">
+							<a href="../../error/404.html">
 								<span class="glyphicon glyphicon-cog"></span>Error 404</a>
 						</li>
 						<li>
-							<a href="../error/500.html">
+							<a href="../../error/500.html">
 								<span class="glyphicon glyphicon-cog"></span>Error 500</a>
 						</li>
 						<li>
-							<a href="/index.html">
+							<a href="/../index.html">
 								<span class="glyphicon glyphicon-off"></span>salir</a>
 						</li>
 					</ul>
@@ -66,48 +66,48 @@
 	<div class="l-sidebar">
 		<div class="logo" style="background: white">
 			<div class="logo__txt">
-				<img src="../img/logo.png" class="img-responsive img-circle" alt="">
+				<img src="../../img/logo.png" class="img-responsive img-circle" alt="">
 			</div>
 		</div>
 		<div class="l-sidebar__content">
 			<nav class="c-menu js-menu">
 				<ul class="u-list">
-					<li class="c-menu__item is-active" data-toggle="tooltip" title="CARTERA">
-						<a href="../vistas/cartera/cartera.html">
+					<li class="c-menu__item is-active" data-toggle="tooltip" title="INICIO">
+						<a id="inicio" href="control_agendamiento.html">
 							<div class="c-menu__item__inner">
-								<i class="fa fa-file-text-o icono"></i>
+								<i class="fa fa fa-home icono"></i>
 								<div class="c-menu-item__title">
-									<span>CARTERA</span>
+									<span>inicio</span>
 								</div>
 							</div>
 						</a>
 					</li>
-					<li class="c-menu__item has-submenu" data-toggle="tooltip" title="SERIVICIOS">
-						<a href="../vistas/control_servicos/control_servicios.html">
+					<li class="c-menu__item has-submenu" data-toggle="tooltip" title="HISTORIAL AGENDAMIENTOS">
+						<a id="historial_agendamientos" href="#">
 							<div class="c-menu__item__inner">
 								<i class="fa fa-id-card-o icono"></i>
 								<div class="c-menu-item__title">
-									<span>SERIVICIOS</span>
+									<span>Historial Agendamientos</span>
 								</div>
 							</div>
 						</a>
 					</li>
-					<li class="c-menu__item has-submenu" data-toggle="tooltip" title="AGENDAMIENTOS">
-						<a href="../vistas/control_agendamiento/control_agendamiento.html">
+					<li class="c-menu__item has-submenu" data-toggle="tooltip" title="REGISTRAR MATERIAL">
+						<a id="registrar_material" href="#">
 							<div class="c-menu__item__inner">
 								<i class="fa fa-calendar icono"></i>
 								<div class="c-menu-item__title">
-									<span>AGENDAMIENTOS</span>
+									<span>Registrar Material</span>
 								</div>
 							</div>
 						</a>
 					</li>
-					<li class="c-menu__item has-submenu" data-toggle="tooltip" title="USUARIOS">
-						<a href="../vistas/control_servicos/control_servicios.html">
+					<li class="c-menu__item has-submenu" data-toggle="tooltip" title="SERVICIOS AGENDADOS">
+						<a id="servicios_agendados" href="#">
 							<div class="c-menu__item__inner">
 								<i class="fa fa-address-book-o icono"></i>
 								<div class="c-menu-item__title">
-									<span>USUARIOS</span>
+									<span>Servicios Agendados</span>
 								</div>
 							</div>
 						</a>
@@ -125,23 +125,24 @@
 
 	<!-- informacion modulo -->
 	<div id="informaion-modulo">
-		<h1>CONTROL DE SERIVICIOS</h1>
-		<a href="../inicio.html">Inicio</a>
-		<p>/Generar Suscripcion</p>
+		<h1>Control Agendamiento</h1>
 	</div>
 	<!--  datos  -->
 	<div id="datos-contenido">
 		<div class="tablas">
 			<legend>Inicio</legend>
-
-			<div class="col-sm-5">
-				<img style="width: 400px" src="../../img/logo.png" alt="">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<center>Agendamientos</center>
+						</div>
+						<div class="panel-body">
+							<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="col-sm-6">
-				<h1 class="titulo-datos">Bienvenido al Modulo de Control de Agendamientos Por favor seleccione la opcion que desea</h1>
-
-			</div>
-			<hr class="linea-tablas">
 		</div>
 	</div>
 	<!-- fin datos- contenido -->
@@ -160,7 +161,8 @@
 <script src="../../js/calendar/fullcalendar.js"></script>
 <script src="../../js/calendar/calendario.js"></script>
 <script src="../../js/font-awesome.js"></script>
-
+<script src="../../js/canvas/canvasjs.min.js"></script>
+<script src="../../js/canvas/Inicio.js"></script>
 <!-- admin -->
 <script src="../../js/admin.js"></script>
 

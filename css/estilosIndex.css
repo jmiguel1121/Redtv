@@ -363,3 +363,68 @@ header img{
 	font-family: "calibri", Garamond, 'Comic Sans';
 
 }
+/* footer ****************************************************************************************/
+
+
+/* Footer */
+.footer {
+    position: relative;
+    background-color: #076366;
+    color: #7d7975;
+    padding: 10px 0 10px;
+    font-size:16px;
+}
+.footer p {
+    line-height:26px;
+    color : #fff;
+}
+.footer h5 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #f89603  ;
+	padding-bottom: 6px;
+	margin: 0px;
+	font-family: "Open Sans";
+	
+}
+.footer h5:after {
+    content: '';
+    display: block;
+	margin: 0px;
+    width: 40%;
+    height: 1px;
+}
+
+.footer ul {
+    line-height:35px;
+    margin: 0px;
+	color:#fff;
+	font-family: "Open Sans";
+    
+}
+
+.footer a:hover {
+    color: #175272 ;
+}
+
+
+
+/*footer bottom */
+.footer-bottom {
+    padding-top: 10px;
+    padding-bottom: 25px;
+    border-top: 1px solid #2f2f33 ;
+    background: #1e1d22  ;
+    
+}
+.copyright-text p {
+    color: #7d7975;
+    margin-top: 18px;
+    margin-bottom: 0;
+	font-size:15px;
+	font-family: "Open Sans";
+}
+
+
+
+ 

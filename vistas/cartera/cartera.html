@@ -18,45 +18,49 @@
 </head>
 
 <body>
-<!-- header ******************************************************************************* -->
-<header class="l-header">
-	<div class="l-header__inner clearfix">
-		<div class="c-header-icon js-hamburger">
-			<div class="hamburger-toggle">
-				<span class="bar-top"></span>
-				<span class="bar-mid"></span>
-				<span class="bar-bot"></span>
+	<!-- header ******************************************************************************* -->
+	<header class="l-header">
+		<div class="l-header__inner clearfix">
+			<div class="c-header-icon js-hamburger">
+				<div class="hamburger-toggle">
+					<span class="bar-top"></span>
+					<span class="bar-mid"></span>
+					<span class="bar-bot"></span>
+				</div>
 			</div>
+
+			<!-- menu suaer -->
+			<ul id="opcion-usuario" class="nav navbar-right">
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<img src="../../img/user_admin.png" alt=""> usuario
+						<b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="../inicio.html">
+								<span class="glyphicon glyphicon-cog"></span>Menu incial</a>
+						</li>
+						<li>
+							<a href="../../error/404.html">
+								<span class="glyphicon glyphicon-cog"></span>Error 404</a>
+						</li>
+						<li>
+							<a href="../../error/500.html">
+								<span class="glyphicon glyphicon-cog"></span>Error 500</a>
+						</li>
+						<li>
+							<a href="/../index.html">
+								<span class="glyphicon glyphicon-off"></span>salir</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<!--  -->
+
 		</div>
-
-		<!-- menu suaer -->
-		<ul id="opcion-usuario" class="nav navbar-right">
-			<li class="dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-					<img src="../../img/user_admin.png" alt=""> usuario
-					<b class="caret"></b>
-				</a>
-				<ul class="dropdown-menu">
-					<li>
-						<a href="../inicio.html"><span class="glyphicon glyphicon-cog"></span>Menu incial</a>
-					</li>
-					<li>
-						<a href="../../error/404.html"><span class="glyphicon glyphicon-cog"></span>Error 404</a>
-					</li>
-					<li>
-						<a href="../../error/500.html"><span class="glyphicon glyphicon-cog"></span>Error 500</a>
-					</li>
-					<li>
-						<a href="/../index.html"><span class="glyphicon glyphicon-off"></span>salir</a>
-					</li>
-				</ul>
-			</li>
-		</ul>
-		<!--  -->
-
-	</div>
-</header>
-<!-- header ********************************************** -->
+	</header>
+	<!-- header ********************************************** -->
 	<!-- menu==================================================================================== -->
 	<div class="l-sidebar">
 		<div class="logo" style="background: white">
@@ -67,30 +71,30 @@
 		<div class="l-sidebar__content">
 			<nav class="c-menu js-menu">
 				<ul class="u-list">
-						<li class="c-menu__item is-active" data-toggle="tooltip" title="INICIO">
-								<a id="inicio" href="../cartera/cartera.html">
-									<div class="c-menu__item__inner">
-											<i class="fa fa fa-home icono"></i>
-											<div class="c-menu-item__title">
-												<span>inicio</span>
-											</div>
-										</div>
-								</a>
-						</li>
+					<li class="c-menu__item is-active" data-toggle="tooltip" title="INICIO">
+						<a id="inicio" href="../cartera/cartera.html">
+							<div class="c-menu__item__inner">
+								<i class="glyphicon glyphicon-home"></i>
+								<div class="c-menu-item__title">
+									<span>inicio</span>
+								</div>
+							</div>
+						</a>
+					</li>
 					<li class="c-menu__item has-submenu" data-toggle="tooltip" title="CONSULTAR FACTURA">
-							<a id="consultar_factura" href="#">
-								<div class="c-menu__item__inner">
-										<i class="fa fa-file-text-o icono"></i>
-										<div class="c-menu-item__title">
-											<span>Consultar Factura</span>
-										</div>
-									</div>
-							</a>
+						<a id="consultar_factura" href="#">
+							<div class="c-menu__item__inner">
+								<i class="glyphicon glyphicon-zoom-in"></i>
+								<div class="c-menu-item__title">
+									<span>Consultar Factura</span>
+								</div>
+							</div>
+						</a>
 					</li>
 					<li class="c-menu__item has-submenu" data-toggle="tooltip" title="CLIENTES EN MORA">
 						<a id="clientes_mora" href="#">
 							<div class="c-menu__item__inner">
-								<i class="fa fa-id-card-o icono"></i>
+								<i class="glyphicon glyphicon-list-alt"></i>
 								<div class="c-menu-item__title">
 									<span>Clientes en Mora</span>
 								</div>
@@ -100,7 +104,7 @@
 					<li class="c-menu__item has-submenu" data-toggle="tooltip" title="GENERAR fACTURA">
 						<a id="generar_facturas" href="#">
 							<div class="c-menu__item__inner">
-								<i class="fa fa-calendar icono"></i>
+								<i class="glyphicon glyphicon-edit"></i>
 								<div class="c-menu-item__title">
 									<span>Generar Factura</span>
 								</div>
@@ -110,7 +114,7 @@
 					<li class="c-menu__item has-submenu" data-toggle="tooltip" title="GENERAR PAGO">
 						<a id="generar_pago" href="#">
 							<div class="c-menu__item__inner">
-								<i class="fa fa-address-book-o icono"></i>
+								<i class="glyphicon glyphicon-briefcase"></i>
 								<div class="c-menu-item__title">
 									<span>Generar Pago</span>
 								</div>
@@ -126,52 +130,54 @@
 <!-- ******************************************************************* -->
 <!-- fin amenu ====================================================================================== -->
 
-	<div id="contenido-modulo">
-		<!-- informacion modulo -->
-		<div id="informaion-modulo">
-			<h1>Cartera</h1>
-		</div>
-		<!--  datos  -->
-		<div id="datos-contenido">
-			<div class="tablas">
-				<legend>Inicio</legend>
-				<div class="row">
-
-						<div class="col-md-12" >
-						  <div class="panel panel-default">
-							   <div class="panel-heading"><center>Facturas</center></div>
-							   <div class="panel-body">
-								 <div id="chartContainer" style="height: 300px; width: 100%;"></div>
-							   </div>
-							 </div>                        
-					   </div>                     
-				   </div>
-			</div>
-			<!-- fin datos-contenido -->
-
-		</div>
+<div id="contenido-modulo">
+	<!-- informacion modulo -->
+	<div id="informaion-modulo">
+		<h1>Cartera</h1>
 	</div>
+	<!--  datos  -->
+	<div id="datos-contenido">
+		<div class="tablas">
+			<legend>Inicio</legend>
+			<div class="row">
 
-	<footer class="py-5 bg-dark">
-		<div class="container">
-			<p class="m-0 text-center text-white">Copyright &copy; RedTv S.A</p>
+				<div class="col-md-12">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<center>Facturas</center>
+						</div>
+						<div class="panel-body col-md-10">
+							<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-		<!-- /.container -->
-	</footer>
-	<!-- scripts -->
-	<script src="../../js/jquery-3.2.1.js"></script>
-	<script src="../../js/bootstrap.min.js"></script>
+		<!-- fin datos-contenido -->
 
-	<!-- calendas js -->
-	<script src="../../js/calendar/jquery-ui.custom.min.js"></script>
-	<script src="../../js/calendar/fullcalendar.js"></script>
-	<script src="../../js/calendar/calendario.js"></script>
-	<script src="../../js/font-awesome.js"></script>
-	<script src="../../js/canvas/canvasjs.min.js"></script>
-	<script src="../../js/canvas/Cartera.js"></script>
+	</div>
+</div>
 
-	<!-- admin js -->
-	<script src="../../js/admin.js"></script>
+<footer class="py-5 bg-dark">
+	<div class="container">
+		<p class="m-0 text-center text-white">Copyright &copy; RedTv S.A</p>
+	</div>
+	<!-- /.container -->
+</footer>
+<!-- scripts -->
+<script src="../../js/jquery-3.2.1.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+
+<!-- calendas js -->
+<script src="../../js/calendar/jquery-ui.custom.min.js"></script>
+<script src="../../js/calendar/fullcalendar.js"></script>
+<script src="../../js/calendar/calendario.js"></script>
+<script src="../../js/font-awesome.js"></script>
+<script src="../../js/canvas/canvasjs.min.js"></script>
+<script src="../../js/canvas/Cartera.js"></script>
+
+<!-- admin js -->
+<script src="../../js/admin.js"></script>
 
 </body>
 

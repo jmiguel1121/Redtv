@@ -1,4 +1,3 @@
-
 /* validacio y regsitro usuario*/
 var form_registro = $("#form-registro");
 
@@ -35,7 +34,7 @@ form_registro.validate({
     messages: {
         password_confirm: {
             equalTo: "Las contraseñas no coinciden",
-        }
+        },
     }
 });
 

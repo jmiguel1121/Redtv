@@ -544,15 +544,7 @@ a.list-group-item.active small {
    	display: inline-block;
    }
 
-   #informaion-modulo p {
-   	color: white;
-   	padding: 10px;
-   	margin-left: 30px;
-   	font: message-box;
-
-   }
-
-   #informaion-modulo {
+  #informaion-modulo {
    	height: 50px;
    	background: url('../img/servidores.jpg') center;
    	background-size: 100% 100%;
@@ -567,10 +559,6 @@ a.list-group-item.active small {
    	padding: 20px;
    	padding: 30px;
 
-   }
-
-   #menu {
-   	display: block;
    }
 
    #formularios {

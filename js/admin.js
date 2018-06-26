@@ -1,5 +1,14 @@
 /** js menu  ********************************************************** */
+$(document).ready(function(){
+	$("body").toggleClass("sidebar-is-reduced sidebar-is-expanded");
+			$(".hamburger-toggle").toggleClass("is-opened");
+			$(".l-sidebar__content").addClass("l-sidebar__content_expanded");
+		$("#contenido-modulo").addClass("contenido_modulo_expand");
+});
+
 "use strict";
+
+
 
 var Dashboard = function () {
 	var global = {
@@ -25,13 +34,13 @@ var Dashboard = function () {
 			$(".hamburger-toggle").toggleClass("is-opened");
 
 		if ($("body").hasClass("sidebar-is-expanded")) {
-			$('[data-toggle="tooltip"]').tooltip("destroy");
+			//$('[data-toggle="tooltip"]').tooltip("destroy");
 		$(".l-sidebar__content").addClass("l-sidebar__content_expanded");
 		$("#contenido-modulo").addClass("contenido_modulo_expand");
 
 	
 		} else {
-			$('[data-toggle="tooltip"]').tooltip(global.tooltipOptions);
+			//$('[data-toggle="tooltip"]').tooltip(global.tooltipOptions);
 			$("#contenido-modulo").removeClass("contenido_modulo_expand");
 		$(".l-sidebar__content").removeClass("l-sidebar__content_expanded");
 
@@ -136,7 +145,10 @@ $('body').on('click', '#control_usuarios', function () {
 	$("#datos-contenido").load('usuarios/lista_usuarios.html');
 
 });
+$('#diccionario').click(function () {
+	$("#datos-contenido").load('diccionario_de_datos.html');
 
+});
 
 
 
